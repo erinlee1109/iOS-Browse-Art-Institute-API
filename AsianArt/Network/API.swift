@@ -12,8 +12,10 @@ struct API {
     static func getArtworks(completion: @escaping ([[String:Any]]?) -> Void) {
         // print("API function was called")
         // let url = URL(string:"https://api.artic.edu/api/v1/artworks/129884")!
-        let url = URL(string:"https://api.artic.edu/api/v1/artworks?fields=id,title,artist_display,date_display")!
-        let request = URLRequest(url: url, cachePolicy: .reloadIgnoringLocalCacheData, timeoutInterval: 10)
+        let url = URL(string:"https://api.artic.edu/api/v1/artworks/search?q=korea&fields=id,title,artist_display,date_display&limit=30")!
+        var request = URLRequest(url: url, cachePolicy: .reloadIgnoringLocalCacheData, timeoutInterval: 10)
+        let userAgent = "Github: iOS-Browse-Art-Institute-API (erinlee1109@gmail.com)"
+        request.setValue(userAgent, forHTTPHeaderField: "User-Agent")
         let session = URLSession(configuration: .default, delegate: nil, delegateQueue: OperationQueue.main)
         let task = session.dataTask(with: request) { (data, response, error) in
             // This will run when the network request returns
