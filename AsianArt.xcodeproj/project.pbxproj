@@ -15,6 +15,9 @@
 		C70FBFD4263B26B600CAEF09 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C70FBFD2263B26B600CAEF09 /* LaunchScreen.storyboard */; };
 		C70FBFDF263B26B600CAEF09 /* AsianArtTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70FBFDE263B26B600CAEF09 /* AsianArtTests.swift */; };
 		C70FBFEA263B26B600CAEF09 /* AsianArtUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70FBFE9263B26B600CAEF09 /* AsianArtUITests.swift */; };
+		C70FBFFC263B28F500CAEF09 /* ArtworkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70FBFFA263B28F500CAEF09 /* ArtworkTableViewCell.swift */; };
+		C70FBFFD263B28F500CAEF09 /* ArtworkTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C70FBFFB263B28F500CAEF09 /* ArtworkTableViewCell.xib */; };
+		C70FC003263CB45800CAEF09 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70FC002263CB45800CAEF09 /* API.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		C70FBFE5263B26B600CAEF09 /* AsianArtUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AsianArtUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C70FBFE9263B26B600CAEF09 /* AsianArtUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsianArtUITests.swift; sourceTree = "<group>"; };
 		C70FBFEB263B26B600CAEF09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C70FBFFA263B28F500CAEF09 /* ArtworkTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtworkTableViewCell.swift; sourceTree = "<group>"; };
+		C70FBFFB263B28F500CAEF09 /* ArtworkTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArtworkTableViewCell.xib; sourceTree = "<group>"; };
+		C70FC002263CB45800CAEF09 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,11 +106,14 @@
 			isa = PBXGroup;
 			children = (
 				C70FBFC7263B26B500CAEF09 /* AppDelegate.swift */,
+				C70FC001263CB41100CAEF09 /* Network */,
+				C7C4D78A26410C54003D0142 /* Model */,
 				C70FBFC9263B26B500CAEF09 /* SceneDelegate.swift */,
-				C70FBFCB263B26B500CAEF09 /* ViewController.swift */,
 				C70FBFCD263B26B500CAEF09 /* Main.storyboard */,
-				C70FBFD0263B26B600CAEF09 /* Assets.xcassets */,
 				C70FBFD2263B26B600CAEF09 /* LaunchScreen.storyboard */,
+				C70FBFD0263B26B600CAEF09 /* Assets.xcassets */,
+				C7C4D78926410C0F003D0142 /* View */,
+				C7C4D78526410BC0003D0142 /* Controller */,
 				C70FBFD5263B26B600CAEF09 /* Info.plist */,
 			);
 			path = AsianArt;
@@ -126,6 +135,38 @@
 				C70FBFEB263B26B600CAEF09 /* Info.plist */,
 			);
 			path = AsianArtUITests;
+			sourceTree = "<group>";
+		};
+		C70FC001263CB41100CAEF09 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				C70FC002263CB45800CAEF09 /* API.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		C7C4D78526410BC0003D0142 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C70FBFCB263B26B500CAEF09 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C7C4D78926410C0F003D0142 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C70FBFFA263B28F500CAEF09 /* ArtworkTableViewCell.swift */,
+				C70FBFFB263B28F500CAEF09 /* ArtworkTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C7C4D78A26410C54003D0142 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +274,7 @@
 			files = (
 				C70FBFD4263B26B600CAEF09 /* LaunchScreen.storyboard in Resources */,
 				C70FBFD1263B26B600CAEF09 /* Assets.xcassets in Resources */,
+				C70FBFFD263B28F500CAEF09 /* ArtworkTableViewCell.xib in Resources */,
 				C70FBFCF263B26B500CAEF09 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -260,7 +302,9 @@
 			files = (
 				C70FBFCC263B26B500CAEF09 /* ViewController.swift in Sources */,
 				C70FBFC8263B26B500CAEF09 /* AppDelegate.swift in Sources */,
+				C70FBFFC263B28F500CAEF09 /* ArtworkTableViewCell.swift in Sources */,
 				C70FBFCA263B26B500CAEF09 /* SceneDelegate.swift in Sources */,
+				C70FC003263CB45800CAEF09 /* API.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
