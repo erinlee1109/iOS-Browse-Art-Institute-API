@@ -38,18 +38,24 @@
 
 ---
 
-#### May 9 Update  
+### May 9 Update  
 
 - [x] User can search using the search bar. 
+
+**To Be Implemented**
+
 - [ ] URL needs to be verified after concatenation. Currently, the app crashes when user searches produce invalid API link. (impleneted May 10) 
 
 <img src="https://recordit.co/Un8wplnnpd.gif" width=150><br>
 
 ---
 
-#### May 4 Update 
+### May 4 Update 
 
 - [x] User can scroll through artworks to skim titles, artists, and dates. 
+
+**To Be Implemented**
+
 - [ ] Yet to retreive images using the IIIF API. (impleneted May 10) 
 - [ ] Yet to implement the detail view screen. (impleneted May 10) 
 - [ ] Yet to implement a search bar. (impleneted May 9) 
