@@ -10,10 +10,20 @@ import Foundation
 struct API {
     // static func getArtworks(inputArray:Array<Any>) -> Array<Any> {
     static func getArtworks(link: String, completion: @escaping ([[String:Any]]?) -> Void) {
-        // figure out what to do if link is invalid!!
+        
+//        let url: URL!
+//        do {
+//            url = try URL(string: link)
+//        } catch {
+//            // print("invalid url")
+//            url = nil
+//        }
+
+        // This is currently force unwrapped. It should be fixed to handle invalid links.
         let url = URL(string: link)!
         // let url = URL(string:"https://api.artic.edu/api/v1/artworks/129884")!
         // let url = URL(string:"https://api.artic.edu/api/v1/artworks/search?q=korea&fields=id,title,artist_display,date_display&limit=30")!
+        
         var request = URLRequest(url: url, cachePolicy: .reloadIgnoringLocalCacheData, timeoutInterval: 10)
         let userAgent = "Github: iOS-Browse-Art-Institute-API (erinlee1109@gmail.com)"
         request.setValue(userAgent, forHTTPHeaderField: "User-Agent") // is this how you do it?

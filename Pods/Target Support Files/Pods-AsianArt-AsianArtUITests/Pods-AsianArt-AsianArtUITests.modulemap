@@ -1,0 +1,6 @@
+framework module Pods_AsianArt_AsianArtUITests {
+  umbrella header "Pods-AsianArt-AsianArtUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

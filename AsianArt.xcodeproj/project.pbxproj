@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		93E676CF76C2264C3EBA4139 /* Pods_AsianArt_AsianArtUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FBDA66A127A4D2F1FBC5B2E /* Pods_AsianArt_AsianArtUITests.framework */; };
+		BA3F1669306D2BE15C932420 /* Pods_AsianArtTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CBCD68846FB594413FCFC05 /* Pods_AsianArtTests.framework */; };
 		C70FBFC8263B26B500CAEF09 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70FBFC7263B26B500CAEF09 /* AppDelegate.swift */; };
 		C70FBFCA263B26B500CAEF09 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70FBFC9263B26B500CAEF09 /* SceneDelegate.swift */; };
 		C70FBFCC263B26B500CAEF09 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70FBFCB263B26B500CAEF09 /* ViewController.swift */; };
@@ -18,6 +20,10 @@
 		C70FBFFC263B28F500CAEF09 /* ArtworkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70FBFFA263B28F500CAEF09 /* ArtworkTableViewCell.swift */; };
 		C70FBFFD263B28F500CAEF09 /* ArtworkTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C70FBFFB263B28F500CAEF09 /* ArtworkTableViewCell.xib */; };
 		C70FC003263CB45800CAEF09 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70FC002263CB45800CAEF09 /* API.swift */; };
+		C795A59C2649087600336A92 /* ArtDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C795A59B2649087600336A92 /* ArtDetailViewController.swift */; };
+		C795A5A2264A2F5000336A92 /* dad-smallpic.png in Resources */ = {isa = PBXBuildFile; fileRef = C795A5A1264A2F5000336A92 /* dad-smallpic.png */; };
+		C795A5A7264A3BB200336A92 /* iiifAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C795A5A6264A3BB200336A92 /* iiifAPI.swift */; };
+		CE4FE159E6924AF68305E5DD /* Pods_AsianArt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64FE2ECCB43793F701C3AD9D /* Pods_AsianArt.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +44,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1EB7D43456A209BA39436F39 /* Pods-AsianArt-AsianArtUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AsianArt-AsianArtUITests.debug.xcconfig"; path = "Target Support Files/Pods-AsianArt-AsianArtUITests/Pods-AsianArt-AsianArtUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		2A465118538B6A414698ABEE /* Pods-AsianArtTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AsianArtTests.debug.xcconfig"; path = "Target Support Files/Pods-AsianArtTests/Pods-AsianArtTests.debug.xcconfig"; sourceTree = "<group>"; };
+		36A6B797AA30FC0D96CC8E3D /* Pods-AsianArt-AsianArtUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AsianArt-AsianArtUITests.release.xcconfig"; path = "Target Support Files/Pods-AsianArt-AsianArtUITests/Pods-AsianArt-AsianArtUITests.release.xcconfig"; sourceTree = "<group>"; };
+		5FBDA66A127A4D2F1FBC5B2E /* Pods_AsianArt_AsianArtUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AsianArt_AsianArtUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		64FE2ECCB43793F701C3AD9D /* Pods_AsianArt.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AsianArt.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6EBBE924CA2277A5B43A98D9 /* Pods-AsianArt.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AsianArt.release.xcconfig"; path = "Target Support Files/Pods-AsianArt/Pods-AsianArt.release.xcconfig"; sourceTree = "<group>"; };
+		8CBCD68846FB594413FCFC05 /* Pods_AsianArtTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AsianArtTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B08ECEC35DEA64BFFB1166FC /* Pods-AsianArt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AsianArt.debug.xcconfig"; path = "Target Support Files/Pods-AsianArt/Pods-AsianArt.debug.xcconfig"; sourceTree = "<group>"; };
+		C0031B18AE4196FA55B116A3 /* Pods-AsianArtTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AsianArtTests.release.xcconfig"; path = "Target Support Files/Pods-AsianArtTests/Pods-AsianArtTests.release.xcconfig"; sourceTree = "<group>"; };
 		C70FBFC4263B26B500CAEF09 /* AsianArt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AsianArt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C70FBFC7263B26B500CAEF09 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C70FBFC9263B26B500CAEF09 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -55,6 +70,9 @@
 		C70FBFFA263B28F500CAEF09 /* ArtworkTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtworkTableViewCell.swift; sourceTree = "<group>"; };
 		C70FBFFB263B28F500CAEF09 /* ArtworkTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArtworkTableViewCell.xib; sourceTree = "<group>"; };
 		C70FC002263CB45800CAEF09 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		C795A59B2649087600336A92 /* ArtDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtDetailViewController.swift; sourceTree = "<group>"; };
+		C795A5A1264A2F5000336A92 /* dad-smallpic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "dad-smallpic.png"; path = "../../Desktop/dad-smallpic.png"; sourceTree = "<group>"; };
+		C795A5A6264A3BB200336A92 /* iiifAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iiifAPI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE4FE159E6924AF68305E5DD /* Pods_AsianArt.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA3F1669306D2BE15C932420 /* Pods_AsianArtTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93E676CF76C2264C3EBA4139 /* Pods_AsianArt_AsianArtUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,10 +106,13 @@
 		C70FBFBB263B26B500CAEF09 = {
 			isa = PBXGroup;
 			children = (
+				C795A5A0264A2E7B00336A92 /* Example */,
 				C70FBFC6263B26B500CAEF09 /* AsianArt */,
 				C70FBFDD263B26B600CAEF09 /* AsianArtTests */,
 				C70FBFE8263B26B600CAEF09 /* AsianArtUITests */,
 				C70FBFC5263B26B500CAEF09 /* Products */,
+				DEA376DD6CC8E2F4A35DF056 /* Pods */,
+				FF829EA0FD9B2E4282703B90 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -141,14 +165,24 @@
 			isa = PBXGroup;
 			children = (
 				C70FC002263CB45800CAEF09 /* API.swift */,
+				C795A5A6264A3BB200336A92 /* iiifAPI.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		C795A5A0264A2E7B00336A92 /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				C795A5A1264A2F5000336A92 /* dad-smallpic.png */,
+			);
+			path = Example;
 			sourceTree = "<group>";
 		};
 		C7C4D78526410BC0003D0142 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
 				C70FBFCB263B26B500CAEF09 /* ViewController.swift */,
+				C795A59B2649087600336A92 /* ArtDetailViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -169,6 +203,29 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		DEA376DD6CC8E2F4A35DF056 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B08ECEC35DEA64BFFB1166FC /* Pods-AsianArt.debug.xcconfig */,
+				6EBBE924CA2277A5B43A98D9 /* Pods-AsianArt.release.xcconfig */,
+				1EB7D43456A209BA39436F39 /* Pods-AsianArt-AsianArtUITests.debug.xcconfig */,
+				36A6B797AA30FC0D96CC8E3D /* Pods-AsianArt-AsianArtUITests.release.xcconfig */,
+				2A465118538B6A414698ABEE /* Pods-AsianArtTests.debug.xcconfig */,
+				C0031B18AE4196FA55B116A3 /* Pods-AsianArtTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FF829EA0FD9B2E4282703B90 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				64FE2ECCB43793F701C3AD9D /* Pods_AsianArt.framework */,
+				5FBDA66A127A4D2F1FBC5B2E /* Pods_AsianArt_AsianArtUITests.framework */,
+				8CBCD68846FB594413FCFC05 /* Pods_AsianArtTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -176,9 +233,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C70FBFEE263B26B600CAEF09 /* Build configuration list for PBXNativeTarget "AsianArt" */;
 			buildPhases = (
+				236853EF20D55A953B2F6C7C /* [CP] Check Pods Manifest.lock */,
 				C70FBFC0263B26B500CAEF09 /* Sources */,
 				C70FBFC1263B26B500CAEF09 /* Frameworks */,
 				C70FBFC2263B26B500CAEF09 /* Resources */,
+				3999413ACEEFB37C17340235 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -193,6 +252,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C70FBFF1263B26B600CAEF09 /* Build configuration list for PBXNativeTarget "AsianArtTests" */;
 			buildPhases = (
+				3EF9803DF9755F12E271B8D2 /* [CP] Check Pods Manifest.lock */,
 				C70FBFD6263B26B600CAEF09 /* Sources */,
 				C70FBFD7263B26B600CAEF09 /* Frameworks */,
 				C70FBFD8263B26B600CAEF09 /* Resources */,
@@ -211,9 +271,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C70FBFF4263B26B600CAEF09 /* Build configuration list for PBXNativeTarget "AsianArtUITests" */;
 			buildPhases = (
+				70E0A5CDDF1AB46EA6D9448E /* [CP] Check Pods Manifest.lock */,
 				C70FBFE1263B26B600CAEF09 /* Sources */,
 				C70FBFE2263B26B600CAEF09 /* Frameworks */,
 				C70FBFE3263B26B600CAEF09 /* Resources */,
+				29461BEAF6437D3FCA424683 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -274,6 +336,7 @@
 			files = (
 				C70FBFD4263B26B600CAEF09 /* LaunchScreen.storyboard in Resources */,
 				C70FBFD1263B26B600CAEF09 /* Assets.xcassets in Resources */,
+				C795A5A2264A2F5000336A92 /* dad-smallpic.png in Resources */,
 				C70FBFFD263B28F500CAEF09 /* ArtworkTableViewCell.xib in Resources */,
 				C70FBFCF263B26B500CAEF09 /* Main.storyboard in Resources */,
 			);
@@ -295,6 +358,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		236853EF20D55A953B2F6C7C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AsianArt-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		29461BEAF6437D3FCA424683 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AsianArt-AsianArtUITests/Pods-AsianArt-AsianArtUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AsianArt-AsianArtUITests/Pods-AsianArt-AsianArtUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AsianArt-AsianArtUITests/Pods-AsianArt-AsianArtUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3999413ACEEFB37C17340235 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AsianArt/Pods-AsianArt-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AsianArt/Pods-AsianArt-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AsianArt/Pods-AsianArt-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3EF9803DF9755F12E271B8D2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AsianArtTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		70E0A5CDDF1AB46EA6D9448E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AsianArt-AsianArtUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C70FBFC0263B26B500CAEF09 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -302,9 +468,11 @@
 			files = (
 				C70FBFCC263B26B500CAEF09 /* ViewController.swift in Sources */,
 				C70FBFC8263B26B500CAEF09 /* AppDelegate.swift in Sources */,
+				C795A5A7264A3BB200336A92 /* iiifAPI.swift in Sources */,
 				C70FBFFC263B28F500CAEF09 /* ArtworkTableViewCell.swift in Sources */,
 				C70FBFCA263B26B500CAEF09 /* SceneDelegate.swift in Sources */,
 				C70FC003263CB45800CAEF09 /* API.swift in Sources */,
+				C795A59C2649087600336A92 /* ArtDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -468,6 +636,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
@@ -477,11 +646,13 @@
 		};
 		C70FBFEF263B26B600CAEF09 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B08ECEC35DEA64BFFB1166FC /* Pods-AsianArt.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9FW5792CCY;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				INFOPLIST_FILE = AsianArt/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -496,6 +667,7 @@
 		};
 		C70FBFF0263B26B600CAEF09 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6EBBE924CA2277A5B43A98D9 /* Pods-AsianArt.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -515,6 +687,7 @@
 		};
 		C70FBFF2263B26B600CAEF09 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A465118538B6A414698ABEE /* Pods-AsianArtTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -537,6 +710,7 @@
 		};
 		C70FBFF3263B26B600CAEF09 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0031B18AE4196FA55B116A3 /* Pods-AsianArtTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -559,6 +733,7 @@
 		};
 		C70FBFF5263B26B600CAEF09 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1EB7D43456A209BA39436F39 /* Pods-AsianArt-AsianArtUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -579,6 +754,7 @@
 		};
 		C70FBFF6263B26B600CAEF09 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 36A6B797AA30FC0D96CC8E3D /* Pods-AsianArt-AsianArtUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
