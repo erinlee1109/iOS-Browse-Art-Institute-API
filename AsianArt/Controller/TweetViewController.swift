@@ -25,9 +25,9 @@ class TweetViewController: UIViewController {
         myTweetMsg += "\(artwork["date_display"] as! String) \n"
         myTweetMsg += "\(artwork["medium_display"] as! String) \n"
         
-        let image_id = artwork["image_id"] as! String
-        let iiifLink = "https://www.artic.edu/iiif/2/" + image_id + "/full/843,/0/default.jpg"
-        myTweetMsg += iiifLink
+//        let image_id = artwork["image_id"] as! String
+//        let iiifLink = "https://www.artic.edu/iiif/2/" + image_id + "/full/843,/0/default.jpg"
+//        myTweetMsg += iiifLink
         
         myTweet.text = myTweetMsg
         
@@ -42,8 +42,6 @@ class TweetViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
-    
     
     @IBAction func cancel(_ sender: Any) {
         navigationController?.popViewController(animated: true)
@@ -51,7 +49,16 @@ class TweetViewController: UIViewController {
     }
     
     @IBAction func confirmTweet(_ sender: Any) {
-        
+        if (!myTweet.text.isEmpty) {
+            TwitterAPICaller.client?.postTweet(tweetString: myTweet.text, success: {
+                self.navigationController?.popViewController(animated: true)
+            }, failure: { (error) in
+                print("Error posting tweet \(error)")
+                // self.navigationController?.popViewController(animated: true)
+            })
+        } else {
+            // self.navigationController?.popViewController(animated: true)
+        }
     }
     
     

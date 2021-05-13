@@ -16,6 +16,7 @@ class ArtDetailViewController: UIViewController {
     @IBOutlet weak var detailArtist: UILabel!
     @IBOutlet weak var detailDate: UILabel!
     @IBOutlet weak var detailInfo: UILabel!
+    @IBOutlet weak var detailOrigin: UILabel!
     
     var artwork: [String: Any?] = [:]
         
@@ -43,6 +44,7 @@ class ArtDetailViewController: UIViewController {
         detailArtist.text = artwork["artist_display"] as? String
         detailDate.text = artwork["date_display"] as? String
         detailInfo.text = artwork["medium_display"] as? String
+        detailOrigin.text = artwork["place_of_origin"] as? String 
         
 //        if let tweetVC = storyboard?.instantiateViewController(withIdentifier: "TweetArt") as? TweetViewController {
 //            tweetVC.artwork = artwork

@@ -15,7 +15,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     // Search bar is implemented using the UISearchControllers (referenced CodePath search bar guide)
     var searchController: UISearchController!
-    
+        
     // outlets for Table View (infinite scroll screen)
     @IBOutlet weak var tableView: UITableView!
 
@@ -25,7 +25,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         tableView.dataSource = self
         
         // loads artwork by default using this API link. Different artworks are fetched upon search.
-        let defaultLink = "https://api.artic.edu/api/v1/artworks?fields=id,title,artist_display,date_display,medium_display,image_id&limit=100"
+        let defaultLink = "https://api.artic.edu/api/v1/artworks?fields=id,title,artist_display,date_display,medium_display,image_id,place_of_origin&limit=100"
         getAPIData(link: defaultLink)
         
         // register the .xib file
@@ -38,6 +38,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         searchController.obscuresBackgroundDuringPresentation = false // underlying content is not obscured during a search
         navigationItem.hidesSearchBarWhenScrolling = false // the search bar doesn't hide when I scroll
         searchController.searchBar.sizeToFit()
+        searchController.searchBar.placeholder = "Explore new art with any keywords"
         tableView.tableHeaderView = searchController.searchBar
         // set this view controller as presenting view controller for the search interface
         definesPresentationContext = true
@@ -70,8 +71,14 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let cell = tableView.dequeueReusableCell(withIdentifier: "ArtworkTableViewCell", for: indexPath) as! ArtworkTableViewCell
         let artwork = artworksArray[indexPath.row]
         cell.titleLabel.text = artwork["title"] as? String
-        cell.artistLabel.text = artwork["artist_display"] as? String
+        
+        let artistLong = artwork["artist_display"] as! String
+        let components = artistLong.components(separatedBy: "\n")
+        let artistShort = components[0]
+        
+        cell.artistLabel.text = artistShort
         cell.dateLabel.text = artwork["date_display"] as? String
+        cell.mediumLabel.text = artwork["medium_display"] as? String
         
         // display image
         if let image_id = artwork["image_id"] as? String {
@@ -96,12 +103,14 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     // request new data using the updated API link when user searches
     func updateSearchResults(for searchController: UISearchController) {
+        searchController.searchBar.placeholder = "Search 'Korea', 'bedroom', 'surreal'..."
+        
         let searchText = searchController.searchBar.text as String?
         // make sure only English alphabet searches are accepted to be passed as an API link
         let inputStatus = containsOnlyLetters(input: searchText!)
         if inputStatus == true {
             let beginURL = "https://api.artic.edu/api/v1/artworks/search?q="
-            let endURL = "&fields=id,title,artist_display,date_display,medium_display,image_id&limit=100"
+            let endURL = "&fields=id,title,artist_display,date_display,medium_display,image_id,place_of_origin&limit=100"
             let linkName = beginURL + searchText! + endURL // force unwrapped searchText
             getAPIData(link: linkName)
         }

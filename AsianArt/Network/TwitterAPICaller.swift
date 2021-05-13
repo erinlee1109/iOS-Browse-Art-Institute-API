@@ -13,7 +13,12 @@ import BDBOAuth1Manager
 
 class TwitterAPICaller: BDBOAuth1SessionManager {
     // I generated the consumerKey and the consumerSecret key on Twitter Developers
-    static let client = TwitterAPICaller(baseURL: URL(string: "https://api.twitter.com"), consumerKey: "PmxwrknQn1DhQAub8oaP2hGS4", consumerSecret: "Zcc9uOl4Yk4WLtQOKW2cclH7iWe1lMSrGEoSkw5Elpy1v5bzSE")
+    
+    //yujeong
+    // static let client = TwitterAPICaller(baseURL: URL(string: "https://api.twitter.com"), consumerKey: "PmxwrknQn1DhQAub8oaP2hGS4", consumerSecret: "Zcc9uOl4Yk4WLtQOKW2cclH7iWe1lMSrGEoSkw5Elpy1v5bzSE")
+    
+    // codepath
+    static let client = TwitterAPICaller(baseURL: URL(string: "https://api.twitter.com"), consumerKey: "5lUJuO5AUpPUCez4ewYDFrtgh", consumerSecret: "s5ynGqXzstUZwFPxVyMDkYh197qvHOcVM3kwv1o2TKhS1avCdS")
     var loginSuccess: (() -> ())?
     var loginFailure: ((Error) -> ())?
     
@@ -21,8 +26,10 @@ class TwitterAPICaller: BDBOAuth1SessionManager {
         let requestToken = BDBOAuth1Credential(queryString: url.query)
         TwitterAPICaller.client?.fetchAccessToken(withPath: "oauth/access_token", method: "POST", requestToken: requestToken, success: { (accessToken: BDBOAuth1Credential!) in
             self.loginSuccess?()
+            print("login actually worked")
         }, failure: { (error: Error!) in
             self.loginFailure?(error)
+            print("login didnt work dalsdjf;alksdjf")
         })
     }
     
@@ -30,8 +37,11 @@ class TwitterAPICaller: BDBOAuth1SessionManager {
         loginSuccess = success
         loginFailure = failure
         TwitterAPICaller.client?.deauthorize()
-        // browseapp:// is my own callback URL. This is also specified on Target>AsianArt>Info>URL Types>URL Schemes as "browseapp". 
-        TwitterAPICaller.client?.fetchRequestToken(withPath: url, method: "GET", callbackURL: URL(string: "browseapp://"), scope: nil, success: { (requestToken: BDBOAuth1Credential!) -> Void in
+        // browseapp:// is my own callback URL. This is also specified on Target>AsianArt>Info>URL Types>URL Schemes as "browseapp".
+        
+        //TwitterAPICaller.client?.fetchRequestToken(withPath: url, method: "GET", callbackURL: URL(string: "browseapp://oauth"), scope: nil, success: { (requestToken: BDBOAuth1Credential!) -> Void in
+        TwitterAPICaller.client?.deauthorize()
+        TwitterAPICaller.client?.fetchRequestToken(withPath: url, method: "GET", callbackURL: URL(string: "alamoTwitter://oauth"), scope: nil, success: { (requestToken: BDBOAuth1Credential!) -> Void in
             let url = URL(string: "https://api.twitter.com/oauth/authorize?oauth_token=\(requestToken.token!)")!
             UIApplication.shared.open(url)
         }, failure: { (error: Error!) -> Void in
@@ -39,6 +49,7 @@ class TwitterAPICaller: BDBOAuth1SessionManager {
             self.loginFailure?(error)
         })
     }
+    
     func logout (){
         deauthorize()
     }
@@ -68,4 +79,11 @@ class TwitterAPICaller: BDBOAuth1SessionManager {
         })
     }
     
+    func postTweet(tweetString: String, success: @escaping () -> (), failure: @escaping (Error)-> ()){
+        let url = "https://api.twitter.com/1.1/statuses/update.json"
+        TwitterAPICaller.client?.post(url, parameters: ["status": tweetString], progress: nil, success: { (task: URLSessionDataTask, response: Any?) in
+            success()
+        }, failure: { (task: URLSessionDataTask?, error: Error) in failure(error)
+        })
+    }
 }

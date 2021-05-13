@@ -19,6 +19,7 @@ class LoginViewController: UIViewController {
         let myUrl = "https://api.twitter.com/oauth/request_token"
         TwitterAPICaller.client?.login(url: myUrl, success: {
             self.performSegue(withIdentifier: "loginToHome", sender: self)
+            print("twitter login successful")
         }, failure: {(Error) in
             print("Login failed whyyy")
         })
