@@ -53,9 +53,6 @@
                             <color key="titleColor" systemColor="linkColor"/>
                             <imageReference key="image" image="paperplane.fill" catalog="system" symbolScale="small"/>
                         </state>
-                        <connections>
-                            <action selector="tweetThis:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="pRc-Xj-FA3"/>
-                        </connections>
                     </button>
                 </subviews>
                 <constraints>
