@@ -23,11 +23,11 @@ class TweetViewController: UIViewController {
         myTweetMsg += "\(artwork["title"] as! String) \n"
         myTweetMsg += "\(artistShort) \n"
         myTweetMsg += "\(artwork["date_display"] as! String) \n"
-        myTweetMsg += "\(artwork["medium_display"] as! String) \n"
+        myTweetMsg += "\(artwork["medium_display"] as! String) \n \n"
         
-//        let image_id = artwork["image_id"] as! String
-//        let iiifLink = "https://www.artic.edu/iiif/2/" + image_id + "/full/843,/0/default.jpg"
-//        myTweetMsg += iiifLink
+        let image_id = artwork["image_id"] as! String
+        let iiifLink = "https://www.artic.edu/iiif/2/" + image_id + "/full/843,/0/default.jpg"
+        myTweetMsg += iiifLink
         
         myTweet.text = myTweetMsg
         
@@ -54,10 +54,10 @@ class TweetViewController: UIViewController {
                 self.navigationController?.popViewController(animated: true)
             }, failure: { (error) in
                 print("Error posting tweet \(error)")
-                // self.navigationController?.popViewController(animated: true)
+                self.navigationController?.popViewController(animated: true)
             })
         } else {
-            // self.navigationController?.popViewController(animated: true)
+            self.navigationController?.popViewController(animated: true)
         }
     }
     
