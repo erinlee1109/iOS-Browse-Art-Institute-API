@@ -22,7 +22,9 @@
 		C70FC003263CB45800CAEF09 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70FC002263CB45800CAEF09 /* API.swift */; };
 		C795A59C2649087600336A92 /* ArtDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C795A59B2649087600336A92 /* ArtDetailViewController.swift */; };
 		C795A5A2264A2F5000336A92 /* dad-smallpic.png in Resources */ = {isa = PBXBuildFile; fileRef = C795A5A1264A2F5000336A92 /* dad-smallpic.png */; };
-		C795A5A7264A3BB200336A92 /* iiifAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C795A5A6264A3BB200336A92 /* iiifAPI.swift */; };
+		C7FD599A264CB4BF0015C7E2 /* TwitterAPICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FD5999264CB4BF0015C7E2 /* TwitterAPICaller.swift */; };
+		C7FD59C7264CD8D20015C7E2 /* TweetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FD59C6264CD8D20015C7E2 /* TweetViewController.swift */; };
+		C7FD59CF264D13270015C7E2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FD59CE264D13270015C7E2 /* LoginViewController.swift */; };
 		CE4FE159E6924AF68305E5DD /* Pods_AsianArt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64FE2ECCB43793F701C3AD9D /* Pods_AsianArt.framework */; };
 /* End PBXBuildFile section */
 
@@ -72,7 +74,9 @@
 		C70FC002263CB45800CAEF09 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		C795A59B2649087600336A92 /* ArtDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtDetailViewController.swift; sourceTree = "<group>"; };
 		C795A5A1264A2F5000336A92 /* dad-smallpic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "dad-smallpic.png"; path = "../../Desktop/dad-smallpic.png"; sourceTree = "<group>"; };
-		C795A5A6264A3BB200336A92 /* iiifAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iiifAPI.swift; sourceTree = "<group>"; };
+		C7FD5999264CB4BF0015C7E2 /* TwitterAPICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterAPICaller.swift; sourceTree = "<group>"; };
+		C7FD59C6264CD8D20015C7E2 /* TweetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetViewController.swift; sourceTree = "<group>"; };
+		C7FD59CE264D13270015C7E2 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,12 +134,9 @@
 			isa = PBXGroup;
 			children = (
 				C70FBFC7263B26B500CAEF09 /* AppDelegate.swift */,
+				C70FBFC9263B26B500CAEF09 /* SceneDelegate.swift */,
 				C70FC001263CB41100CAEF09 /* Network */,
 				C7C4D78A26410C54003D0142 /* Model */,
-				C70FBFC9263B26B500CAEF09 /* SceneDelegate.swift */,
-				C70FBFCD263B26B500CAEF09 /* Main.storyboard */,
-				C70FBFD2263B26B600CAEF09 /* LaunchScreen.storyboard */,
-				C70FBFD0263B26B600CAEF09 /* Assets.xcassets */,
 				C7C4D78926410C0F003D0142 /* View */,
 				C7C4D78526410BC0003D0142 /* Controller */,
 				C70FBFD5263B26B600CAEF09 /* Info.plist */,
@@ -165,7 +166,7 @@
 			isa = PBXGroup;
 			children = (
 				C70FC002263CB45800CAEF09 /* API.swift */,
-				C795A5A6264A3BB200336A92 /* iiifAPI.swift */,
+				C7FD5999264CB4BF0015C7E2 /* TwitterAPICaller.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -181,8 +182,10 @@
 		C7C4D78526410BC0003D0142 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				C7FD59CE264D13270015C7E2 /* LoginViewController.swift */,
 				C70FBFCB263B26B500CAEF09 /* ViewController.swift */,
 				C795A59B2649087600336A92 /* ArtDetailViewController.swift */,
+				C7FD59C6264CD8D20015C7E2 /* TweetViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -190,8 +193,11 @@
 		C7C4D78926410C0F003D0142 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				C70FBFCD263B26B500CAEF09 /* Main.storyboard */,
+				C70FBFD2263B26B600CAEF09 /* LaunchScreen.storyboard */,
 				C70FBFFA263B28F500CAEF09 /* ArtworkTableViewCell.swift */,
 				C70FBFFB263B28F500CAEF09 /* ArtworkTableViewCell.xib */,
+				C70FBFD0263B26B600CAEF09 /* Assets.xcassets */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -466,9 +472,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7FD59CF264D13270015C7E2 /* LoginViewController.swift in Sources */,
+				C7FD599A264CB4BF0015C7E2 /* TwitterAPICaller.swift in Sources */,
+				C7FD59C7264CD8D20015C7E2 /* TweetViewController.swift in Sources */,
 				C70FBFCC263B26B500CAEF09 /* ViewController.swift in Sources */,
 				C70FBFC8263B26B500CAEF09 /* AppDelegate.swift in Sources */,
-				C795A5A7264A3BB200336A92 /* iiifAPI.swift in Sources */,
 				C70FBFFC263B28F500CAEF09 /* ArtworkTableViewCell.swift in Sources */,
 				C70FBFCA263B26B500CAEF09 /* SceneDelegate.swift in Sources */,
 				C70FC003263CB45800CAEF09 /* API.swift in Sources */,
@@ -578,7 +586,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -633,7 +641,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;

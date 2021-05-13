@@ -11,15 +11,7 @@ struct API {
     // static func getArtworks(inputArray:Array<Any>) -> Array<Any> {
     static func getArtworks(link: String, completion: @escaping ([[String:Any]]?) -> Void) {
         
-//        let url: URL!
-//        do {
-//            url = try URL(string: link)
-//        } catch {
-//            // print("invalid url")
-//            url = nil
-//        }
-
-        // This is currently force unwrapped. It should be fixed to handle invalid links.
+        // URL is already checked for validity before being passed on to be force unwrapped here.
         let url = URL(string: link)!
         // let url = URL(string:"https://api.artic.edu/api/v1/artworks/129884")!
         // let url = URL(string:"https://api.artic.edu/api/v1/artworks/search?q=korea&fields=id,title,artist_display,date_display&limit=30")!
