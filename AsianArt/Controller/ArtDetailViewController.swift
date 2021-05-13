@@ -19,6 +19,12 @@ class ArtDetailViewController: UIViewController {
     
     var artwork: [String: Any?] = [:]
         
+    @IBAction func onTweetThis(_ sender: Any) {
+        if let tweetVC = storyboard?.instantiateViewController(withIdentifier: "TweetArt") as? TweetViewController {
+            tweetVC.artwork = artwork
+            navigationController?.pushViewController(tweetVC, animated: true)
+        }
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -36,7 +42,14 @@ class ArtDetailViewController: UIViewController {
         detailTitle.text = artwork["title"] as? String
         detailArtist.text = artwork["artist_display"] as? String
         detailDate.text = artwork["date_display"] as? String
-        // detailInfo.text = artwork["image_id"] as? String
+        detailInfo.text = artwork["medium_display"] as? String
+        
+//        if let tweetVC = storyboard?.instantiateViewController(withIdentifier: "TweetArt") as? TweetViewController {
+//            tweetVC.artwork = artwork
+//            navigationController?.pushViewController(tweetVC, animated: false)
+//        }
+
+
     }
 
     /*

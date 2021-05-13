@@ -38,13 +38,13 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dd8-jd-rPN">
-                        <rect key="frame" x="170" y="6" width="120" height="117"/>
+                        <rect key="frame" x="170" y="7" width="120" height="115.5"/>
                         <color key="tintColor" systemColor="systemGray5Color"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="120" id="8ce-3O-bFP"/>
                             <constraint firstAttribute="height" constant="120" id="X21-Fe-NCf"/>
                         </constraints>
-                        <imageReference key="image" image="photo.on.rectangle.angled" catalog="system" symbolScale="small"/>
+                        <imageReference key="image" image="paintpalette" catalog="system" symbolScale="small"/>
                     </imageView>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wV6-uo-vSN">
                         <rect key="frame" x="10" y="90" width="150" height="18"/>
@@ -85,8 +85,8 @@
         </tableViewCell>
     </objects>
     <resources>
+        <image name="paintpalette" catalog="system" width="128" height="105"/>
         <image name="paperplane.fill" catalog="system" width="128" height="118"/>
-        <image name="photo.on.rectangle.angled" catalog="system" width="128" height="101"/>
         <systemColor name="linkColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

@@ -25,7 +25,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         tableView.dataSource = self
         
         // loads artwork by default using this API link. Different artworks are fetched upon search.
-        let defaultLink = "https://api.artic.edu/api/v1/artworks?fields=id,title,artist_display,date_display,image_id&limit=100"
+        let defaultLink = "https://api.artic.edu/api/v1/artworks?fields=id,title,artist_display,date_display,medium_display,image_id&limit=100"
         getAPIData(link: defaultLink)
         
         // register the .xib file
@@ -101,7 +101,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let inputStatus = containsOnlyLetters(input: searchText!)
         if inputStatus == true {
             let beginURL = "https://api.artic.edu/api/v1/artworks/search?q="
-            let endURL = "&fields=id,title,artist_display,date_display,image_id&limit=100"
+            let endURL = "&fields=id,title,artist_display,date_display,medium_display,image_id&limit=100"
             let linkName = beginURL + searchText! + endURL // force unwrapped searchText
             getAPIData(link: linkName)
         }
