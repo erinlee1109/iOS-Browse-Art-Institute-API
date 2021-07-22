@@ -1,5 +1,8 @@
 # Browse Art in Art Institute of Chicago
 
+## Intro/Goal
+**I am tired of using art education apps where the launch screen is filled with recommendations to browse works by male European artists. I started developing an iOS mobile app where users will be guided to primarily engage with art/artists from underrepresented communities.** 👩🏻‍💻 
+
 ### Language / Tools
 * Swift / Xcode
 * [CocoaPods](https://cocoapods.org/) / [AlarmofireImage](https://cocoapods.org/pods/Alamofire)
@@ -7,6 +10,11 @@
 ### API
 * [Art Institute of Chicago's Public API](https://api.artic.edu/docs)
 * [IIIF API (Images)](https://api.artic.edu/docs/#iiif-image-api)
+
+### To Be Implemented 
+
+- [ ] Make details screen scrollable. Add "read more" button to read description of the artwork.  
+- [ ] "Recommended for you" cards with featured artist and artworks from underrepresented communities.
 
 ---
 
