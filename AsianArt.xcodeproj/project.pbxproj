@@ -20,8 +20,8 @@
 		C70FBFFC263B28F500CAEF09 /* ArtworkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70FBFFA263B28F500CAEF09 /* ArtworkTableViewCell.swift */; };
 		C70FBFFD263B28F500CAEF09 /* ArtworkTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C70FBFFB263B28F500CAEF09 /* ArtworkTableViewCell.xib */; };
 		C70FC003263CB45800CAEF09 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70FC002263CB45800CAEF09 /* API.swift */; };
+		C7577DEB26A916CC007F6EF9 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7577DEA26A916CC007F6EF9 /* DetailViewController.swift */; };
 		C795A59C2649087600336A92 /* ArtDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C795A59B2649087600336A92 /* ArtDetailViewController.swift */; };
-		C795A5A2264A2F5000336A92 /* dad-smallpic.png in Resources */ = {isa = PBXBuildFile; fileRef = C795A5A1264A2F5000336A92 /* dad-smallpic.png */; };
 		C7FD599A264CB4BF0015C7E2 /* TwitterAPICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FD5999264CB4BF0015C7E2 /* TwitterAPICaller.swift */; };
 		C7FD59C7264CD8D20015C7E2 /* TweetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FD59C6264CD8D20015C7E2 /* TweetViewController.swift */; };
 		C7FD59CF264D13270015C7E2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FD59CE264D13270015C7E2 /* LoginViewController.swift */; };
@@ -72,6 +72,7 @@
 		C70FBFFA263B28F500CAEF09 /* ArtworkTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtworkTableViewCell.swift; sourceTree = "<group>"; };
 		C70FBFFB263B28F500CAEF09 /* ArtworkTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArtworkTableViewCell.xib; sourceTree = "<group>"; };
 		C70FC002263CB45800CAEF09 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		C7577DEA26A916CC007F6EF9 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		C795A59B2649087600336A92 /* ArtDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtDetailViewController.swift; sourceTree = "<group>"; };
 		C795A5A1264A2F5000336A92 /* dad-smallpic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "dad-smallpic.png"; path = "../../Desktop/dad-smallpic.png"; sourceTree = "<group>"; };
 		C7FD5999264CB4BF0015C7E2 /* TwitterAPICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterAPICaller.swift; sourceTree = "<group>"; };
@@ -186,6 +187,7 @@
 				C70FBFCB263B26B500CAEF09 /* ViewController.swift */,
 				C795A59B2649087600336A92 /* ArtDetailViewController.swift */,
 				C7FD59C6264CD8D20015C7E2 /* TweetViewController.swift */,
+				C7577DEA26A916CC007F6EF9 /* DetailViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -342,7 +344,6 @@
 			files = (
 				C70FBFD4263B26B600CAEF09 /* LaunchScreen.storyboard in Resources */,
 				C70FBFD1263B26B600CAEF09 /* Assets.xcassets in Resources */,
-				C795A5A2264A2F5000336A92 /* dad-smallpic.png in Resources */,
 				C70FBFFD263B28F500CAEF09 /* ArtworkTableViewCell.xib in Resources */,
 				C70FBFCF263B26B500CAEF09 /* Main.storyboard in Resources */,
 			);
@@ -479,6 +480,7 @@
 				C70FBFC8263B26B500CAEF09 /* AppDelegate.swift in Sources */,
 				C70FBFFC263B28F500CAEF09 /* ArtworkTableViewCell.swift in Sources */,
 				C70FBFCA263B26B500CAEF09 /* SceneDelegate.swift in Sources */,
+				C7577DEB26A916CC007F6EF9 /* DetailViewController.swift in Sources */,
 				C70FC003263CB45800CAEF09 /* API.swift in Sources */,
 				C795A59C2649087600336A92 /* ArtDetailViewController.swift in Sources */,
 			);
@@ -660,7 +662,6 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9FW5792CCY;
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				INFOPLIST_FILE = AsianArt/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

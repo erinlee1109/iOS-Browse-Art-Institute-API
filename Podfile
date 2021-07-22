@@ -8,7 +8,6 @@ target 'AsianArt' do
   # Pods for AsianArt
   pod 'AlamofireImage'
   pod 'AFNetworking'
-  # pod 'AFNetworking'
   pod 'BDBOAuth1Manager'
 
   target 'AsianArtTests' do

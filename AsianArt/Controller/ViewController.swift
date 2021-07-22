@@ -117,7 +117,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if let vc = storyboard?.instantiateViewController(withIdentifier: "ArtDetail") as? ArtDetailViewController {
+        if let vc = storyboard?.instantiateViewController(withIdentifier: "DetailView") as? DetailViewController {
             // carry over the selected cell's data to the detail view controller
             vc.artwork = artworksArray[indexPath.row]
             navigationController?.pushViewController(vc, animated: true)

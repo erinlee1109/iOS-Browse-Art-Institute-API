@@ -5,11 +5,11 @@
 //  Created by Yujeong Lee on 5/12/21.
 //
 
-// pod install issues were resolved by looking at this issue https://github.com/CocoaPods/CocoaPods/issues/10518
 import UIKit
-// Although I am using a different library (BDBOAuth1Manager), this article was very helpful in navigating this https://johncodeos.com/how-to-add-twitter-login-button-to-your-ios-app-using-swift/
 import BDBOAuth1Manager
 
+// pod install issues were resolved by looking at this issue https://github.com/CocoaPods/CocoaPods/issues/10518
+// Although I am using a different library (BDBOAuth1Manager), this article was very helpful in navigating this https://johncodeos.com/how-to-add-twitter-login-button-to-your-ios-app-using-swift/
 
 class TwitterAPICaller: BDBOAuth1SessionManager {
     // I generated the consumerKey and the consumerSecret key on Twitter Developers

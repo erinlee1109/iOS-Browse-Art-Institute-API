@@ -31,7 +31,6 @@ class ArtDetailViewController: UIViewController {
         
         // Image and labels display detailed information of artwork for the selected cell
         
-        // detailImage.image = UIImage(named: "dad-smallpic.png")
         // detailImage.image = UIImage(named: "https://www.artic.edu/iiif/2/1adf2696-8489-499b-cad2-821d7fde4b33/full/843,/0/default.jpg")
         if let image_id = artwork["image_id"] as? String {
             let iiifLink = "https://www.artic.edu/iiif/2/" + image_id + "/full/843,/0/default.jpg"

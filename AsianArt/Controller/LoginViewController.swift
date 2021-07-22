@@ -16,13 +16,17 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func onLoginButton(_ sender: Any) {
+        self.performSegue(withIdentifier: "loginToHome", sender: self)
+        
+        /* TWITTER LOGIN HERE abandoned July 21 */
+        /*
         let myUrl = "https://api.twitter.com/oauth/request_token"
         TwitterAPICaller.client?.login(url: myUrl, success: {
             self.performSegue(withIdentifier: "loginToHome", sender: self)
             print("twitter login successful")
         }, failure: {(Error) in
             print("Login failed whyyy")
-        })
+        }) */
     }
     
     
