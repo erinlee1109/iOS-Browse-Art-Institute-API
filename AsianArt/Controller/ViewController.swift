@@ -39,6 +39,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         // loads artwork by default using this API link. Different artworks are fetched upon search.
         let defaultLink = "https://api.artic.edu/api/v1/artworks?fields=id,title,artist_display,date_display,medium_display,image_id,place_of_origin&limit=100"
         getAPIData(link: defaultLink)
+                
+        Timer.scheduledTimer(timeInterval: 2.0, target: self, selector: #selector(self.stopAnimation), userInfo: nil, repeats: false)
         
         // register the .xib file
         let nib = UINib(nibName: "ArtworkTableViewCell", bundle: nil)
@@ -66,7 +68,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             }
             self.artworksArray = artworks
             self.tableView.reloadData()
-            self.stopAnimation()
         }
     }
     
@@ -140,7 +141,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     // added Jul 23
     func startAnimation(){
-        let piggyName = "70036-milestone-completed-2"
+        // let piggyName = "70036-milestone-completed-2"
         let abstName = "70021-abstract-painting-loader"
         animationView = .init(name: abstName)
         //animationView = .init(name: "70021-abstract-painting-loader")
