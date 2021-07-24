@@ -6,21 +6,33 @@
 //
 
 import UIKit
+import Lottie
 // CocoaPods reference https://guides.codepath.com/ios/CocoaPods#installing-cocoapods
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchResultsUpdating {
+    
+    // outlets for Table View (infinite scroll screen)
+    @IBOutlet weak var tableView: UITableView!
+    
     // data returned from API.swift is appended below into this array
     var artworksArray: [[String:Any?]] = []
     var filteredData: [[String:Any?]] = [] // Search bar config
     
     // Search bar is implemented using the UISearchControllers (referenced CodePath search bar guide)
     var searchController: UISearchController!
-        
-    // outlets for Table View (infinite scroll screen)
-    @IBOutlet weak var tableView: UITableView!
-
+    
+    // global var for the Lottie animation
+    var animationView: AnimationView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        // animation (added jul 23)
+        /*
+        animationView = .init(name: "70021-abstract-painting-loader")
+        animationView?.frame = view.bounds
+        animationView?.play() */
+        startAnimation()
+        
         tableView.delegate = self
         tableView.dataSource = self
         
@@ -42,6 +54,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         tableView.tableHeaderView = searchController.searchBar
         // set this view controller as presenting view controller for the search interface
         definesPresentationContext = true
+        
     }
     
     // Pass the API link to the API.swift file to request data.
@@ -53,6 +66,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             }
             self.artworksArray = artworks
             self.tableView.reloadData()
+            self.stopAnimation()
         }
     }
     
@@ -72,11 +86,19 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let artwork = artworksArray[indexPath.row]
         cell.titleLabel.text = artwork["title"] as? String
         
-        let artistLong = artwork["artist_display"] as! String
-        let components = artistLong.components(separatedBy: "\n")
-        let artistShort = components[0]
+        // catches if "artist_display" returns nil
+        let artistLong = artwork["artist_display"] as? String
+        if artistLong != nil {
+            let components = artistLong!.components(separatedBy: "\n")
+            let artistShort = components[0]
+            cell.artistLabel.text = artistShort
+        }
         
-        cell.artistLabel.text = artistShort
+//        let artistLong = artwork["artist_display"] as? String
+//        let components = artistLong.components(separatedBy: "\n")
+//        let artistShort = components[0]
+//        cell.artistLabel.text = artistShort
+        
         cell.dateLabel.text = artwork["date_display"] as? String
         cell.mediumLabel.text = artwork["medium_display"] as? String
         
@@ -116,6 +138,30 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         }
     }
     
+    // added Jul 23
+    func startAnimation(){
+        let piggyName = "70036-milestone-completed-2"
+        let abstName = "70021-abstract-painting-loader"
+        animationView = .init(name: abstName)
+        //animationView = .init(name: "70021-abstract-painting-loader")
+        
+        // setting the size
+        animationView.frame = CGRect(x: view.frame.width/2 - 100, y: view.frame.height/2 - 100, width: 200, height: 200) // we want it to be in the middle third/middle half
+        //fit the animation
+        animationView.contentMode = .scaleAspectFit // not scaleAspectFull because the animation can get distorted or cut off
+        view.addSubview(animationView) // adding a subview so we can remove the subview after
+        // loop the animation & set the speed
+        animationView.loopMode = .loop
+        animationView.animationSpeed = 5
+        animationView.play()
+    }
+    
+    @objc func stopAnimation(){
+        animationView?.stop()
+        view.subviews.last?.removeFromSuperview()
+    }
+    
+    // passing the data to DetailViewController when user taps a row
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if let vc = storyboard?.instantiateViewController(withIdentifier: "DetailView") as? DetailViewController {
             // carry over the selected cell's data to the detail view controller

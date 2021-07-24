@@ -20,7 +20,10 @@
 		C70FBFFC263B28F500CAEF09 /* ArtworkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70FBFFA263B28F500CAEF09 /* ArtworkTableViewCell.swift */; };
 		C70FBFFD263B28F500CAEF09 /* ArtworkTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C70FBFFB263B28F500CAEF09 /* ArtworkTableViewCell.xib */; };
 		C70FC003263CB45800CAEF09 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70FC002263CB45800CAEF09 /* API.swift */; };
+		C72A317426AB36F8008113D6 /* 70021-abstract-painting-loader.json in Resources */ = {isa = PBXBuildFile; fileRef = C72A317326AB36F8008113D6 /* 70021-abstract-painting-loader.json */; };
+		C72A317626AB5A6B008113D6 /* 70036-milestone-completed-2.json in Resources */ = {isa = PBXBuildFile; fileRef = C72A317526AB5A6B008113D6 /* 70036-milestone-completed-2.json */; };
 		C7577DEB26A916CC007F6EF9 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7577DEA26A916CC007F6EF9 /* DetailViewController.swift */; };
+		C7577DEF26A9362C007F6EF9 /* ArtistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7577DEE26A9362C007F6EF9 /* ArtistViewController.swift */; };
 		C795A59C2649087600336A92 /* ArtDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C795A59B2649087600336A92 /* ArtDetailViewController.swift */; };
 		C7FD599A264CB4BF0015C7E2 /* TwitterAPICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FD5999264CB4BF0015C7E2 /* TwitterAPICaller.swift */; };
 		C7FD59C7264CD8D20015C7E2 /* TweetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FD59C6264CD8D20015C7E2 /* TweetViewController.swift */; };
@@ -72,7 +75,10 @@
 		C70FBFFA263B28F500CAEF09 /* ArtworkTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtworkTableViewCell.swift; sourceTree = "<group>"; };
 		C70FBFFB263B28F500CAEF09 /* ArtworkTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArtworkTableViewCell.xib; sourceTree = "<group>"; };
 		C70FC002263CB45800CAEF09 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		C72A317326AB36F8008113D6 /* 70021-abstract-painting-loader.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "70021-abstract-painting-loader.json"; path = "../../../Downloads/70021-abstract-painting-loader.json"; sourceTree = "<group>"; };
+		C72A317526AB5A6B008113D6 /* 70036-milestone-completed-2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "70036-milestone-completed-2.json"; path = "../../../Downloads/70036-milestone-completed-2.json"; sourceTree = "<group>"; };
 		C7577DEA26A916CC007F6EF9 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		C7577DEE26A9362C007F6EF9 /* ArtistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistViewController.swift; sourceTree = "<group>"; };
 		C795A59B2649087600336A92 /* ArtDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtDetailViewController.swift; sourceTree = "<group>"; };
 		C795A5A1264A2F5000336A92 /* dad-smallpic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "dad-smallpic.png"; path = "../../Desktop/dad-smallpic.png"; sourceTree = "<group>"; };
 		C7FD5999264CB4BF0015C7E2 /* TwitterAPICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterAPICaller.swift; sourceTree = "<group>"; };
@@ -134,6 +140,7 @@
 		C70FBFC6263B26B500CAEF09 /* AsianArt */ = {
 			isa = PBXGroup;
 			children = (
+				C72A317226AB36D1008113D6 /* Extra */,
 				C70FBFC7263B26B500CAEF09 /* AppDelegate.swift */,
 				C70FBFC9263B26B500CAEF09 /* SceneDelegate.swift */,
 				C70FC001263CB41100CAEF09 /* Network */,
@@ -172,6 +179,15 @@
 			path = Network;
 			sourceTree = "<group>";
 		};
+		C72A317226AB36D1008113D6 /* Extra */ = {
+			isa = PBXGroup;
+			children = (
+				C72A317526AB5A6B008113D6 /* 70036-milestone-completed-2.json */,
+				C72A317326AB36F8008113D6 /* 70021-abstract-painting-loader.json */,
+			);
+			path = Extra;
+			sourceTree = "<group>";
+		};
 		C795A5A0264A2E7B00336A92 /* Example */ = {
 			isa = PBXGroup;
 			children = (
@@ -188,6 +204,7 @@
 				C795A59B2649087600336A92 /* ArtDetailViewController.swift */,
 				C7FD59C6264CD8D20015C7E2 /* TweetViewController.swift */,
 				C7577DEA26A916CC007F6EF9 /* DetailViewController.swift */,
+				C7577DEE26A9362C007F6EF9 /* ArtistViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -342,7 +359,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C72A317626AB5A6B008113D6 /* 70036-milestone-completed-2.json in Resources */,
 				C70FBFD4263B26B600CAEF09 /* LaunchScreen.storyboard in Resources */,
+				C72A317426AB36F8008113D6 /* 70021-abstract-painting-loader.json in Resources */,
 				C70FBFD1263B26B600CAEF09 /* Assets.xcassets in Resources */,
 				C70FBFFD263B28F500CAEF09 /* ArtworkTableViewCell.xib in Resources */,
 				C70FBFCF263B26B500CAEF09 /* Main.storyboard in Resources */,
@@ -473,6 +492,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7577DEF26A9362C007F6EF9 /* ArtistViewController.swift in Sources */,
 				C7FD59CF264D13270015C7E2 /* LoginViewController.swift in Sources */,
 				C7FD599A264CB4BF0015C7E2 /* TwitterAPICaller.swift in Sources */,
 				C7FD59C7264CD8D20015C7E2 /* TweetViewController.swift in Sources */,

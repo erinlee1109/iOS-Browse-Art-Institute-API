@@ -9,6 +9,8 @@ target 'AsianArt' do
   pod 'AlamofireImage'
   pod 'AFNetworking'
   pod 'BDBOAuth1Manager'
+  pod 'lottie-ios'
+
 
   target 'AsianArtTests' do
     inherit! :search_paths

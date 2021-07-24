@@ -19,11 +19,13 @@ PODS:
     - Alamofire (~> 5.4)
   - BDBOAuth1Manager (2.0.0):
     - AFNetworking/NSURLSession (~> 3.0.0)
+  - lottie-ios (3.2.3)
 
 DEPENDENCIES:
   - AFNetworking
   - AlamofireImage
   - BDBOAuth1Manager
+  - lottie-ios
 
 SPEC REPOS:
   trunk:
@@ -31,13 +33,15 @@ SPEC REPOS:
     - Alamofire
     - AlamofireImage
     - BDBOAuth1Manager
+    - lottie-ios
 
 SPEC CHECKSUMS:
   AFNetworking: a0075feb321559dc78d9d85b55d11caa19eabb93
   Alamofire: e447a2774a40c996748296fa2c55112fdbbc42f9
   AlamofireImage: 34a2d90b0e5fe6a5605f85ae4b7b01e784c60192
   BDBOAuth1Manager: 92d17d06f8a648602962304cd2f35ae7394fa001
+  lottie-ios: c058aeafa76daa4cf64d773554bccc8385d0150e
 
-PODFILE CHECKSUM: 9eba457cf92022e9a8844cffc6133186f278f6d4
+PODFILE CHECKSUM: 5441b578ffd414cab3092fb21095af159610c2ac
 
 COCOAPODS: 1.10.1
