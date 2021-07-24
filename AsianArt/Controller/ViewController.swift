@@ -143,6 +143,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func startAnimation(){
         // let piggyName = "70036-milestone-completed-2"
         let abstName = "70021-abstract-painting-loader"
+        // created object of a class
         animationView = .init(name: abstName)
         //animationView = .init(name: "70021-abstract-painting-loader")
         
