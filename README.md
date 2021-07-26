@@ -1,7 +1,7 @@
 # Browse Art in Art Institute of Chicago
 
 ## Intro/Goal
-**I am tired of using art education apps where the launch screen is filled with recommendations to browse works by male European artists. I started developing an iOS mobile app where users will be guided to primarily engage with art/artists from underrepresented communities.** 👩🏻‍💻 
+**I am tired of using art education apps filled with recommendations to browse works by male European artists. I started developing an iOS mobile app where users will be guided to primarily engage with art/artists from underrepresented communities using Art Institute's wonderful API.** 👩🏻‍💻 
 
 ### Language / Tools
 * Swift / Xcode
