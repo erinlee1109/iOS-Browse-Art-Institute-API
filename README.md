@@ -1,5 +1,6 @@
 # Browse Art in Art Institute of Chicago
 
+## _#Decolonize This Place_
 ## Intro/Goal
 **I am tired of using art education apps filled with recommendations to browse works by male European artists. I started developing an iOS mobile app where users will be guided to primarily engage with art/artists from underrepresented communities using Art Institute's wonderful API.** 👩🏻‍💻 
 
