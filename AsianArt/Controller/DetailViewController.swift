@@ -23,6 +23,7 @@ class DetailViewController: UIViewController {
         
         self.setUpLabelTap()
         
+        // how do I make this into a function?
         if let image_id = artwork["image_id"] as? String {
             let iiifLink = "https://www.artic.edu/iiif/2/" + image_id + "/full/843,/0/default.jpg"
             let imageURL = URL(string: iiifLink)
@@ -46,7 +47,17 @@ class DetailViewController: UIViewController {
             artistVC.artist = artwork["artist_display"]
             navigationController?.pushViewController(artistVC, animated: true)
         }
-        
+            
+    }
+    
+    // problem:  jul 25 this doesn't work yet 
+    @IBAction func imageTapped(_ sender: UITapGestureRecognizer) {
+        if let artImageVC = storyboard?.instantiateViewController(identifier: "ArtImageOnly") as? ArtImageOnlyViewController {
+            artImageVC.imageID = artwork["image_id"]
+            navigationController?.pushViewController(artImageVC, animated: true)
+            
+            // self.performSegue(withIdentifier: "ArtImageOnly", sender: self)
+        }
     }
     
     // setting up so that UIText tap will be recognized

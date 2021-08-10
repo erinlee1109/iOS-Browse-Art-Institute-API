@@ -11,7 +11,7 @@ class ArtistViewController: UIViewController {
 
     @IBOutlet weak var artistName: UILabel!
     
-    var artist: Any??;
+    var artist: Any??
     
     override func viewDidLoad() {
         super.viewDidLoad()
