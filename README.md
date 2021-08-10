@@ -12,6 +12,8 @@
 * [Art Institute of Chicago's Public API](https://api.artic.edu/docs)
 * [IIIF API (Images)](https://api.artic.edu/docs/#iiif-image-api)
 
+### Wireframe
+<img src=figma-blueprint.png width=700>
 
 ---
 
