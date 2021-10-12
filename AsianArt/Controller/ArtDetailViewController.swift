@@ -49,11 +49,6 @@ class ArtDetailViewController: UIViewController {
         detailInfo.text = artwork["medium_display"] as? String
         detailOrigin.text = artwork["place_of_origin"] as? String 
         
-//        if let tweetVC = storyboard?.instantiateViewController(withIdentifier: "TweetArt") as? TweetViewController {
-//            tweetVC.artwork = artwork
-//            navigationController?.pushViewController(tweetVC, animated: false)
-//        }
-
 
     }
 

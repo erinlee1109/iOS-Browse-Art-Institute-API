@@ -25,24 +25,7 @@ struct API {
                 print(error.localizedDescription)
             } else if let data = data {
                 let dataDictionary = try! JSONSerialization.jsonObject(with: data, options: []) as! [String: Any]
-// ------------ this part works to make an array of titles ------------- //
-//                var artTitles = [String]() // establish an empty array to put titles in
-//                var artistDisplays = [String]()
-//                var dateDisplays = [String]()
-//                if let artData = dataDictionary["data"] as? [[String:Any]] {
-//                    for artDataDict in artData {
-//                        let title = artDataDict["title"] as! String
-//                        artTitles.append(title)
-//                        let artistDisplay = artDataDict["artist_display"] as! String
-//                        artistDisplays.append(artistDisplay)
-//                        let dateDisplay = artDataDict["date_display"] as! String
-//                        dateDisplays.append(dateDisplay)
-//                    }
-//                }
-//                print(artTitles)
-//                print(artistDisplays)
-//                print(dateDisplays)
-// ------------ this part works to make an array of titles ------------- //
+                
                 let artDictionaries = dataDictionary["data"] as! [[String:Any]]
                 var artWorks: [[String:Any]] = []
                 for dictionary in artDictionaries {
