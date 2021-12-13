@@ -37,7 +37,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         tableView.dataSource = self
         
         // loads artwork by default using this API link. Different artworks are fetched upon search.
-        let defaultLink = "https://api.artic.edu/api/v1/artworks?fields=id,title,artist_display,date_display,medium_display,image_id,place_of_origin&limit=100"
+        let defaultLink = "https://api.artic.edu/api/v1/artworks?fields=id,title,artist_display,artist_id,date_display,medium_display,image_id,place_of_origin&limit=100"
         getAPIData(link: defaultLink)
                 
         Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(self.stopAnimation), userInfo: nil, repeats: false)

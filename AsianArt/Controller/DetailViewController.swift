@@ -20,6 +20,8 @@ class DetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .action, target: self, action: #selector(shareTapped))
         
         self.setUpLabelTap()
         
@@ -27,7 +29,10 @@ class DetailViewController: UIViewController {
         if let image_id = artwork["image_id"] as? String {
             let iiifLink = "https://www.artic.edu/iiif/2/" + image_id + "/full/843,/0/default.jpg"
             let imageURL = URL(string: iiifLink)
-            artImageView.af.setImage(withURL: imageURL!)
+            
+            // created an extension to load remote URL into UIImageView
+            artImageView.load(url:imageURL!)
+//            artImageView.af.setImage(withURL: imageURL!)
             artImageView.backgroundColor = .lightGray
         }
         
@@ -43,38 +48,45 @@ class DetailViewController: UIViewController {
     
     // outlet from the tap gesture recog in the details view
     @IBAction func artistTapped(_ sender: UITapGestureRecognizer) {
-        if let artistVC = storyboard?.instantiateViewController(withIdentifier: "Artist") as? ArtistViewController {
-            artistVC.artist = artwork["artist_display"]
+        if let artistVC = storyboard?.instantiateViewController(withIdentifier: "Artist") as? ArtistTableVC {
+            artistVC.artistID = artwork["artist_id"] as? Int
+            artistVC.artistName = artwork["artist_display"] as? String
             navigationController?.pushViewController(artistVC, animated: true)
         }
-            
     }
     
-    // problem:  jul 25 this doesn't work yet 
-    @IBAction func imageTapped(_ sender: UITapGestureRecognizer) {
-        if let artImageVC = storyboard?.instantiateViewController(identifier: "ArtImageOnly") as? ArtImageOnlyViewController {
-            artImageVC.imageID = artwork["image_id"]
-            navigationController?.pushViewController(artImageVC, animated: true)
-            
-            // self.performSegue(withIdentifier: "ArtImageOnly", sender: self)
-        }
-    }
-    
-    // setting up so that UIText tap will be recognized
+    // setting up so that UIText tap will be recognized for artist tapped
     func setUpLabelTap(){
         let labelTap = UITapGestureRecognizer(target: self, action: #selector(self.artistTapped(_:)))
         self.artistDetailTitle.isUserInteractionEnabled = true
         self.artistDetailTitle.addGestureRecognizer(labelTap)
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    /// allow downloading image and share to social media
+    @objc func shareTapped(){
+        guard let image = artImageView.image?.pngData() else {
+            print("No image found")
+            return
+        }
+        print(type(of: image))
+        
+        let vc = UIActivityViewController(activityItems: [image], applicationActivities: [])
+        vc.popoverPresentationController?.barButtonItem = navigationItem.rightBarButtonItem
+        present(vc, animated: true)
     }
-    */
+}
 
+/// load a remote image URL into UIImageView
+extension UIImageView {
+    func load(url: URL) {
+        DispatchQueue.global().async { [weak self] in
+            if let data = try? Data(contentsOf: url) {
+                if let image = UIImage(data: data) {
+                    DispatchQueue.main.async {
+                        self?.image = image
+                    }
+                }
+            }
+        }
+    }
 }

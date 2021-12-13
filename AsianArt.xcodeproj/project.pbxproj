@@ -20,12 +20,14 @@
 		C70FBFFC263B28F500CAEF09 /* ArtworkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70FBFFA263B28F500CAEF09 /* ArtworkTableViewCell.swift */; };
 		C70FBFFD263B28F500CAEF09 /* ArtworkTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C70FBFFB263B28F500CAEF09 /* ArtworkTableViewCell.xib */; };
 		C70FC003263CB45800CAEF09 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70FC002263CB45800CAEF09 /* API.swift */; };
-		C72A318826AE01DF008113D6 /* ArtImageOnlyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72A318726AE01DF008113D6 /* ArtImageOnlyViewController.swift */; };
 		C7577DEB26A916CC007F6EF9 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7577DEA26A916CC007F6EF9 /* DetailViewController.swift */; };
 		C7577DEF26A9362C007F6EF9 /* ArtistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7577DEE26A9362C007F6EF9 /* ArtistViewController.swift */; };
+		C762B9642745B85500B50A44 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C762B9632745B85500B50A44 /* Accounts.framework */; };
+		C762B9662745B86100B50A44 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C762B9652745B86100B50A44 /* Social.framework */; };
 		C774552126BEFFC60035BA43 /* 70000-abstract-painting-1.json in Resources */ = {isa = PBXBuildFile; fileRef = C774552026BEFFC60035BA43 /* 70000-abstract-painting-1.json */; };
 		C774552326BEFFD50035BA43 /* 992-articulation.json in Resources */ = {isa = PBXBuildFile; fileRef = C774552226BEFFD50035BA43 /* 992-articulation.json */; };
 		C795A59C2649087600336A92 /* ArtDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C795A59B2649087600336A92 /* ArtDetailViewController.swift */; };
+		C7F5676627669A61004C73FB /* ArtistTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F5676527669A61004C73FB /* ArtistTableVC.swift */; };
 		C7FD599A264CB4BF0015C7E2 /* TwitterAPICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FD5999264CB4BF0015C7E2 /* TwitterAPICaller.swift */; };
 		C7FD59C7264CD8D20015C7E2 /* TweetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FD59C6264CD8D20015C7E2 /* TweetViewController.swift */; };
 		C7FD59CF264D13270015C7E2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FD59CE264D13270015C7E2 /* LoginViewController.swift */; };
@@ -76,12 +78,14 @@
 		C70FBFFA263B28F500CAEF09 /* ArtworkTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtworkTableViewCell.swift; sourceTree = "<group>"; };
 		C70FBFFB263B28F500CAEF09 /* ArtworkTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArtworkTableViewCell.xib; sourceTree = "<group>"; };
 		C70FC002263CB45800CAEF09 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
-		C72A318726AE01DF008113D6 /* ArtImageOnlyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtImageOnlyViewController.swift; sourceTree = "<group>"; };
 		C7577DEA26A916CC007F6EF9 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		C7577DEE26A9362C007F6EF9 /* ArtistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistViewController.swift; sourceTree = "<group>"; };
+		C762B9632745B85500B50A44 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		C762B9652745B86100B50A44 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		C774552026BEFFC60035BA43 /* 70000-abstract-painting-1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "70000-abstract-painting-1.json"; sourceTree = "<group>"; };
 		C774552226BEFFD50035BA43 /* 992-articulation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "992-articulation.json"; sourceTree = "<group>"; };
 		C795A59B2649087600336A92 /* ArtDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtDetailViewController.swift; sourceTree = "<group>"; };
+		C7F5676527669A61004C73FB /* ArtistTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistTableVC.swift; sourceTree = "<group>"; };
 		C7FD5999264CB4BF0015C7E2 /* TwitterAPICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterAPICaller.swift; sourceTree = "<group>"; };
 		C7FD59C6264CD8D20015C7E2 /* TweetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetViewController.swift; sourceTree = "<group>"; };
 		C7FD59CE264D13270015C7E2 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -92,6 +96,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C762B9662745B86100B50A44 /* Social.framework in Frameworks */,
+				C762B9642745B85500B50A44 /* Accounts.framework in Frameworks */,
 				CE4FE159E6924AF68305E5DD /* Pods_AsianArt.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -140,12 +146,11 @@
 		C70FBFC6263B26B500CAEF09 /* AsianArt */ = {
 			isa = PBXGroup;
 			children = (
-				C72A317226AB36D1008113D6 /* Extra */,
-				C70FBFC7263B26B500CAEF09 /* AppDelegate.swift */,
-				C70FBFC9263B26B500CAEF09 /* SceneDelegate.swift */,
-				C70FC001263CB41100CAEF09 /* Network */,
+				C72A317226AB36D1008113D6 /* Model */,
 				C7C4D78926410C0F003D0142 /* View */,
 				C7C4D78526410BC0003D0142 /* Controller */,
+				C70FC001263CB41100CAEF09 /* Network */,
+				C7F567672766C855004C73FB /* Not In Use */,
 				C70FBFD5263B26B600CAEF09 /* Info.plist */,
 			);
 			path = AsianArt;
@@ -178,13 +183,13 @@
 			path = Network;
 			sourceTree = "<group>";
 		};
-		C72A317226AB36D1008113D6 /* Extra */ = {
+		C72A317226AB36D1008113D6 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				C774552026BEFFC60035BA43 /* 70000-abstract-painting-1.json */,
 				C774552226BEFFD50035BA43 /* 992-articulation.json */,
 			);
-			path = Extra;
+			path = Model;
 			sourceTree = "<group>";
 		};
 		C7C4D78526410BC0003D0142 /* Controller */ = {
@@ -192,11 +197,8 @@
 			children = (
 				C7FD59CE264D13270015C7E2 /* LoginViewController.swift */,
 				C70FBFCB263B26B500CAEF09 /* ViewController.swift */,
-				C795A59B2649087600336A92 /* ArtDetailViewController.swift */,
-				C7FD59C6264CD8D20015C7E2 /* TweetViewController.swift */,
 				C7577DEA26A916CC007F6EF9 /* DetailViewController.swift */,
-				C7577DEE26A9362C007F6EF9 /* ArtistViewController.swift */,
-				C72A318726AE01DF008113D6 /* ArtImageOnlyViewController.swift */,
+				C7F5676527669A61004C73FB /* ArtistTableVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -206,11 +208,23 @@
 			children = (
 				C70FBFCD263B26B500CAEF09 /* Main.storyboard */,
 				C70FBFD2263B26B600CAEF09 /* LaunchScreen.storyboard */,
+				C70FBFC7263B26B500CAEF09 /* AppDelegate.swift */,
+				C70FBFC9263B26B500CAEF09 /* SceneDelegate.swift */,
 				C70FBFFA263B28F500CAEF09 /* ArtworkTableViewCell.swift */,
 				C70FBFFB263B28F500CAEF09 /* ArtworkTableViewCell.xib */,
 				C70FBFD0263B26B600CAEF09 /* Assets.xcassets */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		C7F567672766C855004C73FB /* Not In Use */ = {
+			isa = PBXGroup;
+			children = (
+				C7FD59C6264CD8D20015C7E2 /* TweetViewController.swift */,
+				C7577DEE26A9362C007F6EF9 /* ArtistViewController.swift */,
+				C795A59B2649087600336A92 /* ArtDetailViewController.swift */,
+			);
+			path = "Not In Use";
 			sourceTree = "<group>";
 		};
 		DEA376DD6CC8E2F4A35DF056 /* Pods */ = {
@@ -229,6 +243,8 @@
 		FF829EA0FD9B2E4282703B90 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C762B9652745B86100B50A44 /* Social.framework */,
+				C762B9632745B85500B50A44 /* Accounts.framework */,
 				64FE2ECCB43793F701C3AD9D /* Pods_AsianArt.framework */,
 				5FBDA66A127A4D2F1FBC5B2E /* Pods_AsianArt_AsianArtUITests.framework */,
 				8CBCD68846FB594413FCFC05 /* Pods_AsianArtTests.framework */,
@@ -485,9 +501,9 @@
 				C70FBFC8263B26B500CAEF09 /* AppDelegate.swift in Sources */,
 				C70FBFFC263B28F500CAEF09 /* ArtworkTableViewCell.swift in Sources */,
 				C70FBFCA263B26B500CAEF09 /* SceneDelegate.swift in Sources */,
-				C72A318826AE01DF008113D6 /* ArtImageOnlyViewController.swift in Sources */,
 				C7577DEB26A916CC007F6EF9 /* DetailViewController.swift in Sources */,
 				C70FC003263CB45800CAEF09 /* API.swift in Sources */,
+				C7F5676627669A61004C73FB /* ArtistTableVC.swift in Sources */,
 				C795A59C2649087600336A92 /* ArtDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

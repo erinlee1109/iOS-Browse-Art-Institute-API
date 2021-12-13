@@ -6,16 +6,26 @@
 //
 
 import UIKit
-import BDBOAuth1Manager
-
+//import BDBOAuth1Manager // delete later
+import Parse
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
-    var window: UIWindow?
+//    var window: UIWindow? // delete later
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        // Connect to the Parse Server "Browse Art"
+        let parseConfig = ParseClientConfiguration {
+            $0.applicationId = "O3Ozs8GmNQaTtrkvFO09i8r6mZQSTSVPUeEyCIxx"
+            $0.clientKey = "aZ8w4fkU8jiNBys2KuYlc6VJj2ea26DjJbvXS416"
+            $0.server = "https://parseapi.back4app.com"
+        }
+        Parse.initialize(with: parseConfig)
+        
+        
         return true
     }
     

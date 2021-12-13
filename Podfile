@@ -10,6 +10,7 @@ target 'AsianArt' do
   pod 'AFNetworking'
   pod 'BDBOAuth1Manager'
   pod 'lottie-ios'
+  pod 'Parse'
 
 
   target 'AsianArtTests' do
