@@ -6,8 +6,7 @@
 //
 
 import UIKit
-//import BDBOAuth1Manager // delete later
-import Parse
+import ParseSwift
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,15 +14,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //    var window: UIWindow? // delete later
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
-        
+
+        ParseSwift.initialize(applicationId: "O3Ozs8GmNQaTtrkvFO09i8r6mZQSTSVPUeEyCIxx", clientKey: "aZ8w4fkU8jiNBys2KuYlc6VJj2ea26DjJbvXS416", serverURL: URL(string: "https://parseapi.back4app.com")!)
+
+
         // Connect to the Parse Server "Browse Art"
-        let parseConfig = ParseClientConfiguration {
-            $0.applicationId = "O3Ozs8GmNQaTtrkvFO09i8r6mZQSTSVPUeEyCIxx"
-            $0.clientKey = "aZ8w4fkU8jiNBys2KuYlc6VJj2ea26DjJbvXS416"
-            $0.server = "https://parseapi.back4app.com"
-        }
-        Parse.initialize(with: parseConfig)
+//        let parseConfig = ParseConfiguration {
+//            $0.applicationId = "O3Ozs8GmNQaTtrkvFO09i8r6mZQSTSVPUeEyCIxx"
+//            $0.clientKey = "aZ8w4fkU8jiNBys2KuYlc6VJj2ea26DjJbvXS416"
+//            $0.server = "https://parseapi.back4app.com"
+//        }
+//        ParseSwift.initialize(configuration: parseConfig)
         
         
         return true
@@ -51,10 +52,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
     
-    func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
-        TwitterAPICaller.client?.handleOpenUrl(url: url)
-        return true
-    }
+//    func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
+//        TwitterAPICaller.client?.handleOpenUrl(url: url)
+//        return true
+//    }
 
     // MARK: UISceneSession Lifecycle
 

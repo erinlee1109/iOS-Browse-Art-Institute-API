@@ -3,15 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		93E676CF76C2264C3EBA4139 /* Pods_AsianArt_AsianArtUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FBDA66A127A4D2F1FBC5B2E /* Pods_AsianArt_AsianArtUITests.framework */; };
-		BA3F1669306D2BE15C932420 /* Pods_AsianArtTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CBCD68846FB594413FCFC05 /* Pods_AsianArtTests.framework */; };
 		C70FBFC8263B26B500CAEF09 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70FBFC7263B26B500CAEF09 /* AppDelegate.swift */; };
 		C70FBFCA263B26B500CAEF09 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70FBFC9263B26B500CAEF09 /* SceneDelegate.swift */; };
-		C70FBFCC263B26B500CAEF09 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70FBFCB263B26B500CAEF09 /* ViewController.swift */; };
+		C70FBFCC263B26B500CAEF09 /* ArtHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70FBFCB263B26B500CAEF09 /* ArtHomeViewController.swift */; };
 		C70FBFCF263B26B500CAEF09 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C70FBFCD263B26B500CAEF09 /* Main.storyboard */; };
 		C70FBFD1263B26B600CAEF09 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C70FBFD0263B26B600CAEF09 /* Assets.xcassets */; };
 		C70FBFD4263B26B600CAEF09 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C70FBFD2263B26B600CAEF09 /* LaunchScreen.storyboard */; };
@@ -20,18 +18,19 @@
 		C70FBFFC263B28F500CAEF09 /* ArtworkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70FBFFA263B28F500CAEF09 /* ArtworkTableViewCell.swift */; };
 		C70FBFFD263B28F500CAEF09 /* ArtworkTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C70FBFFB263B28F500CAEF09 /* ArtworkTableViewCell.xib */; };
 		C70FC003263CB45800CAEF09 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70FC002263CB45800CAEF09 /* API.swift */; };
-		C7577DEB26A916CC007F6EF9 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7577DEA26A916CC007F6EF9 /* DetailViewController.swift */; };
-		C7577DEF26A9362C007F6EF9 /* ArtistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7577DEE26A9362C007F6EF9 /* ArtistViewController.swift */; };
+		C7577DEB26A916CC007F6EF9 /* ArtDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7577DEA26A916CC007F6EF9 /* ArtDetailViewController.swift */; };
 		C762B9642745B85500B50A44 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C762B9632745B85500B50A44 /* Accounts.framework */; };
 		C762B9662745B86100B50A44 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C762B9652745B86100B50A44 /* Social.framework */; };
+		C76DCEDE2864FB32009F795A /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = C76DCEDD2864FB32009F795A /* Alamofire */; };
+		C76DCEE12864FB77009F795A /* AlamofireImage in Frameworks */ = {isa = PBXBuildFile; productRef = C76DCEE02864FB77009F795A /* AlamofireImage */; };
+		C76DCEE42864FBAA009F795A /* AFNetworking in Frameworks */ = {isa = PBXBuildFile; productRef = C76DCEE32864FBAA009F795A /* AFNetworking */; };
+		C76DCEE72864FD85009F795A /* ParseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = C76DCEE62864FD85009F795A /* ParseSwift */; };
+		C76DCEEE28651144009F795A /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = C76DCEED28651144009F795A /* Lottie */; };
 		C774552126BEFFC60035BA43 /* 70000-abstract-painting-1.json in Resources */ = {isa = PBXBuildFile; fileRef = C774552026BEFFC60035BA43 /* 70000-abstract-painting-1.json */; };
 		C774552326BEFFD50035BA43 /* 992-articulation.json in Resources */ = {isa = PBXBuildFile; fileRef = C774552226BEFFD50035BA43 /* 992-articulation.json */; };
-		C795A59C2649087600336A92 /* ArtDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C795A59B2649087600336A92 /* ArtDetailViewController.swift */; };
-		C7F5676627669A61004C73FB /* ArtistTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F5676527669A61004C73FB /* ArtistTableVC.swift */; };
+		C7F5676627669A61004C73FB /* ArtistTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F5676527669A61004C73FB /* ArtistTableViewController.swift */; };
 		C7FD599A264CB4BF0015C7E2 /* TwitterAPICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FD5999264CB4BF0015C7E2 /* TwitterAPICaller.swift */; };
-		C7FD59C7264CD8D20015C7E2 /* TweetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FD59C6264CD8D20015C7E2 /* TweetViewController.swift */; };
 		C7FD59CF264D13270015C7E2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FD59CE264D13270015C7E2 /* LoginViewController.swift */; };
-		CE4FE159E6924AF68305E5DD /* Pods_AsianArt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64FE2ECCB43793F701C3AD9D /* Pods_AsianArt.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,19 +51,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1EB7D43456A209BA39436F39 /* Pods-AsianArt-AsianArtUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AsianArt-AsianArtUITests.debug.xcconfig"; path = "Target Support Files/Pods-AsianArt-AsianArtUITests/Pods-AsianArt-AsianArtUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		2A465118538B6A414698ABEE /* Pods-AsianArtTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AsianArtTests.debug.xcconfig"; path = "Target Support Files/Pods-AsianArtTests/Pods-AsianArtTests.debug.xcconfig"; sourceTree = "<group>"; };
-		36A6B797AA30FC0D96CC8E3D /* Pods-AsianArt-AsianArtUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AsianArt-AsianArtUITests.release.xcconfig"; path = "Target Support Files/Pods-AsianArt-AsianArtUITests/Pods-AsianArt-AsianArtUITests.release.xcconfig"; sourceTree = "<group>"; };
-		5FBDA66A127A4D2F1FBC5B2E /* Pods_AsianArt_AsianArtUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AsianArt_AsianArtUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		64FE2ECCB43793F701C3AD9D /* Pods_AsianArt.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AsianArt.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6EBBE924CA2277A5B43A98D9 /* Pods-AsianArt.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AsianArt.release.xcconfig"; path = "Target Support Files/Pods-AsianArt/Pods-AsianArt.release.xcconfig"; sourceTree = "<group>"; };
-		8CBCD68846FB594413FCFC05 /* Pods_AsianArtTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AsianArtTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B08ECEC35DEA64BFFB1166FC /* Pods-AsianArt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AsianArt.debug.xcconfig"; path = "Target Support Files/Pods-AsianArt/Pods-AsianArt.debug.xcconfig"; sourceTree = "<group>"; };
-		C0031B18AE4196FA55B116A3 /* Pods-AsianArtTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AsianArtTests.release.xcconfig"; path = "Target Support Files/Pods-AsianArtTests/Pods-AsianArtTests.release.xcconfig"; sourceTree = "<group>"; };
 		C70FBFC4263B26B500CAEF09 /* AsianArt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AsianArt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C70FBFC7263B26B500CAEF09 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C70FBFC9263B26B500CAEF09 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C70FBFCB263B26B500CAEF09 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C70FBFCB263B26B500CAEF09 /* ArtHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtHomeViewController.swift; sourceTree = "<group>"; };
 		C70FBFCE263B26B500CAEF09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C70FBFD0263B26B600CAEF09 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C70FBFD3263B26B600CAEF09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -78,16 +68,13 @@
 		C70FBFFA263B28F500CAEF09 /* ArtworkTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtworkTableViewCell.swift; sourceTree = "<group>"; };
 		C70FBFFB263B28F500CAEF09 /* ArtworkTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArtworkTableViewCell.xib; sourceTree = "<group>"; };
 		C70FC002263CB45800CAEF09 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
-		C7577DEA26A916CC007F6EF9 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
-		C7577DEE26A9362C007F6EF9 /* ArtistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistViewController.swift; sourceTree = "<group>"; };
+		C7577DEA26A916CC007F6EF9 /* ArtDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtDetailViewController.swift; sourceTree = "<group>"; };
 		C762B9632745B85500B50A44 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		C762B9652745B86100B50A44 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		C774552026BEFFC60035BA43 /* 70000-abstract-painting-1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "70000-abstract-painting-1.json"; sourceTree = "<group>"; };
 		C774552226BEFFD50035BA43 /* 992-articulation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "992-articulation.json"; sourceTree = "<group>"; };
-		C795A59B2649087600336A92 /* ArtDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtDetailViewController.swift; sourceTree = "<group>"; };
-		C7F5676527669A61004C73FB /* ArtistTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistTableVC.swift; sourceTree = "<group>"; };
+		C7F5676527669A61004C73FB /* ArtistTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistTableViewController.swift; sourceTree = "<group>"; };
 		C7FD5999264CB4BF0015C7E2 /* TwitterAPICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterAPICaller.swift; sourceTree = "<group>"; };
-		C7FD59C6264CD8D20015C7E2 /* TweetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetViewController.swift; sourceTree = "<group>"; };
 		C7FD59CE264D13270015C7E2 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -96,9 +83,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C76DCEDE2864FB32009F795A /* Alamofire in Frameworks */,
+				C76DCEEE28651144009F795A /* Lottie in Frameworks */,
+				C76DCEE12864FB77009F795A /* AlamofireImage in Frameworks */,
 				C762B9662745B86100B50A44 /* Social.framework in Frameworks */,
+				C76DCEE42864FBAA009F795A /* AFNetworking in Frameworks */,
+				C76DCEE72864FD85009F795A /* ParseSwift in Frameworks */,
 				C762B9642745B85500B50A44 /* Accounts.framework in Frameworks */,
-				CE4FE159E6924AF68305E5DD /* Pods_AsianArt.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,7 +97,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA3F1669306D2BE15C932420 /* Pods_AsianArtTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,7 +104,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				93E676CF76C2264C3EBA4139 /* Pods_AsianArt_AsianArtUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -128,7 +117,6 @@
 				C70FBFDD263B26B600CAEF09 /* AsianArtTests */,
 				C70FBFE8263B26B600CAEF09 /* AsianArtUITests */,
 				C70FBFC5263B26B500CAEF09 /* Products */,
-				DEA376DD6CC8E2F4A35DF056 /* Pods */,
 				FF829EA0FD9B2E4282703B90 /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -146,11 +134,10 @@
 		C70FBFC6263B26B500CAEF09 /* AsianArt */ = {
 			isa = PBXGroup;
 			children = (
-				C72A317226AB36D1008113D6 /* Model */,
+				C72A317226AB36D1008113D6 /* JSON */,
 				C7C4D78926410C0F003D0142 /* View */,
 				C7C4D78526410BC0003D0142 /* Controller */,
 				C70FC001263CB41100CAEF09 /* Network */,
-				C7F567672766C855004C73FB /* Not In Use */,
 				C70FBFD5263B26B600CAEF09 /* Info.plist */,
 			);
 			path = AsianArt;
@@ -183,22 +170,22 @@
 			path = Network;
 			sourceTree = "<group>";
 		};
-		C72A317226AB36D1008113D6 /* Model */ = {
+		C72A317226AB36D1008113D6 /* JSON */ = {
 			isa = PBXGroup;
 			children = (
 				C774552026BEFFC60035BA43 /* 70000-abstract-painting-1.json */,
 				C774552226BEFFD50035BA43 /* 992-articulation.json */,
 			);
-			path = Model;
+			path = JSON;
 			sourceTree = "<group>";
 		};
 		C7C4D78526410BC0003D0142 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
 				C7FD59CE264D13270015C7E2 /* LoginViewController.swift */,
-				C70FBFCB263B26B500CAEF09 /* ViewController.swift */,
-				C7577DEA26A916CC007F6EF9 /* DetailViewController.swift */,
-				C7F5676527669A61004C73FB /* ArtistTableVC.swift */,
+				C70FBFCB263B26B500CAEF09 /* ArtHomeViewController.swift */,
+				C7577DEA26A916CC007F6EF9 /* ArtDetailViewController.swift */,
+				C7F5676527669A61004C73FB /* ArtistTableViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -217,37 +204,11 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		C7F567672766C855004C73FB /* Not In Use */ = {
-			isa = PBXGroup;
-			children = (
-				C7FD59C6264CD8D20015C7E2 /* TweetViewController.swift */,
-				C7577DEE26A9362C007F6EF9 /* ArtistViewController.swift */,
-				C795A59B2649087600336A92 /* ArtDetailViewController.swift */,
-			);
-			path = "Not In Use";
-			sourceTree = "<group>";
-		};
-		DEA376DD6CC8E2F4A35DF056 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				B08ECEC35DEA64BFFB1166FC /* Pods-AsianArt.debug.xcconfig */,
-				6EBBE924CA2277A5B43A98D9 /* Pods-AsianArt.release.xcconfig */,
-				1EB7D43456A209BA39436F39 /* Pods-AsianArt-AsianArtUITests.debug.xcconfig */,
-				36A6B797AA30FC0D96CC8E3D /* Pods-AsianArt-AsianArtUITests.release.xcconfig */,
-				2A465118538B6A414698ABEE /* Pods-AsianArtTests.debug.xcconfig */,
-				C0031B18AE4196FA55B116A3 /* Pods-AsianArtTests.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 		FF829EA0FD9B2E4282703B90 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				C762B9652745B86100B50A44 /* Social.framework */,
 				C762B9632745B85500B50A44 /* Accounts.framework */,
-				64FE2ECCB43793F701C3AD9D /* Pods_AsianArt.framework */,
-				5FBDA66A127A4D2F1FBC5B2E /* Pods_AsianArt_AsianArtUITests.framework */,
-				8CBCD68846FB594413FCFC05 /* Pods_AsianArtTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -259,17 +220,22 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C70FBFEE263B26B600CAEF09 /* Build configuration list for PBXNativeTarget "AsianArt" */;
 			buildPhases = (
-				236853EF20D55A953B2F6C7C /* [CP] Check Pods Manifest.lock */,
 				C70FBFC0263B26B500CAEF09 /* Sources */,
 				C70FBFC1263B26B500CAEF09 /* Frameworks */,
 				C70FBFC2263B26B500CAEF09 /* Resources */,
-				3999413ACEEFB37C17340235 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = AsianArt;
+			packageProductDependencies = (
+				C76DCEDD2864FB32009F795A /* Alamofire */,
+				C76DCEE02864FB77009F795A /* AlamofireImage */,
+				C76DCEE32864FBAA009F795A /* AFNetworking */,
+				C76DCEE62864FD85009F795A /* ParseSwift */,
+				C76DCEED28651144009F795A /* Lottie */,
+			);
 			productName = AsianArt;
 			productReference = C70FBFC4263B26B500CAEF09 /* AsianArt.app */;
 			productType = "com.apple.product-type.application";
@@ -278,7 +244,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C70FBFF1263B26B600CAEF09 /* Build configuration list for PBXNativeTarget "AsianArtTests" */;
 			buildPhases = (
-				3EF9803DF9755F12E271B8D2 /* [CP] Check Pods Manifest.lock */,
 				C70FBFD6263B26B600CAEF09 /* Sources */,
 				C70FBFD7263B26B600CAEF09 /* Frameworks */,
 				C70FBFD8263B26B600CAEF09 /* Resources */,
@@ -297,11 +262,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C70FBFF4263B26B600CAEF09 /* Build configuration list for PBXNativeTarget "AsianArtUITests" */;
 			buildPhases = (
-				70E0A5CDDF1AB46EA6D9448E /* [CP] Check Pods Manifest.lock */,
 				C70FBFE1263B26B600CAEF09 /* Sources */,
 				C70FBFE2263B26B600CAEF09 /* Frameworks */,
 				C70FBFE3263B26B600CAEF09 /* Resources */,
-				29461BEAF6437D3FCA424683 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -344,6 +307,13 @@
 				Base,
 			);
 			mainGroup = C70FBFBB263B26B500CAEF09;
+			packageReferences = (
+				C76DCEDC2864FB32009F795A /* XCRemoteSwiftPackageReference "Alamofire" */,
+				C76DCEDF2864FB77009F795A /* XCRemoteSwiftPackageReference "AlamofireImage" */,
+				C76DCEE22864FBAA009F795A /* XCRemoteSwiftPackageReference "AFNetworking" */,
+				C76DCEE52864FD85009F795A /* XCRemoteSwiftPackageReference "Parse-Swift" */,
+				C76DCEEC28651143009F795A /* XCRemoteSwiftPackageReference "lottie-ios" */,
+			);
 			productRefGroup = C70FBFC5263B26B500CAEF09 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -385,126 +355,20 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		236853EF20D55A953B2F6C7C /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-AsianArt-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		29461BEAF6437D3FCA424683 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AsianArt-AsianArtUITests/Pods-AsianArt-AsianArtUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AsianArt-AsianArtUITests/Pods-AsianArt-AsianArtUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AsianArt-AsianArtUITests/Pods-AsianArt-AsianArtUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		3999413ACEEFB37C17340235 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AsianArt/Pods-AsianArt-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AsianArt/Pods-AsianArt-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AsianArt/Pods-AsianArt-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		3EF9803DF9755F12E271B8D2 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-AsianArtTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		70E0A5CDDF1AB46EA6D9448E /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-AsianArt-AsianArtUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		C70FBFC0263B26B500CAEF09 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C7577DEF26A9362C007F6EF9 /* ArtistViewController.swift in Sources */,
 				C7FD59CF264D13270015C7E2 /* LoginViewController.swift in Sources */,
 				C7FD599A264CB4BF0015C7E2 /* TwitterAPICaller.swift in Sources */,
-				C7FD59C7264CD8D20015C7E2 /* TweetViewController.swift in Sources */,
-				C70FBFCC263B26B500CAEF09 /* ViewController.swift in Sources */,
+				C70FBFCC263B26B500CAEF09 /* ArtHomeViewController.swift in Sources */,
 				C70FBFC8263B26B500CAEF09 /* AppDelegate.swift in Sources */,
 				C70FBFFC263B28F500CAEF09 /* ArtworkTableViewCell.swift in Sources */,
 				C70FBFCA263B26B500CAEF09 /* SceneDelegate.swift in Sources */,
-				C7577DEB26A916CC007F6EF9 /* DetailViewController.swift in Sources */,
+				C7577DEB26A916CC007F6EF9 /* ArtDetailViewController.swift in Sources */,
 				C70FC003263CB45800CAEF09 /* API.swift in Sources */,
-				C7F5676627669A61004C73FB /* ArtistTableVC.swift in Sources */,
-				C795A59C2649087600336A92 /* ArtDetailViewController.swift in Sources */,
+				C7F5676627669A61004C73FB /* ArtistTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -610,7 +474,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -665,7 +529,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -678,13 +542,13 @@
 		};
 		C70FBFEF263B26B600CAEF09 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B08ECEC35DEA64BFFB1166FC /* Pods-AsianArt.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9FW5792CCY;
 				INFOPLIST_FILE = AsianArt/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -698,18 +562,18 @@
 		};
 		C70FBFF0263B26B600CAEF09 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6EBBE924CA2277A5B43A98D9 /* Pods-AsianArt.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9FW5792CCY;
 				INFOPLIST_FILE = AsianArt/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = earlham.AsianArt;
+				PRODUCT_BUNDLE_IDENTIFIER = yujeong.AsianArt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -718,7 +582,6 @@
 		};
 		C70FBFF2263B26B600CAEF09 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2A465118538B6A414698ABEE /* Pods-AsianArtTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -741,7 +604,6 @@
 		};
 		C70FBFF3263B26B600CAEF09 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C0031B18AE4196FA55B116A3 /* Pods-AsianArtTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -764,7 +626,6 @@
 		};
 		C70FBFF5263B26B600CAEF09 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1EB7D43456A209BA39436F39 /* Pods-AsianArt-AsianArtUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -785,7 +646,6 @@
 		};
 		C70FBFF6263B26B600CAEF09 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 36A6B797AA30FC0D96CC8E3D /* Pods-AsianArt-AsianArtUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -844,6 +704,77 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C76DCEDC2864FB32009F795A /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		C76DCEDF2864FB77009F795A /* XCRemoteSwiftPackageReference "AlamofireImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/AlamofireImage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+		C76DCEE22864FBAA009F795A /* XCRemoteSwiftPackageReference "AFNetworking" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AFNetworking/AFNetworking";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+		C76DCEE52864FD85009F795A /* XCRemoteSwiftPackageReference "Parse-Swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/parse-community/Parse-Swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+		C76DCEEC28651143009F795A /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C76DCEDD2864FB32009F795A /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C76DCEDC2864FB32009F795A /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		C76DCEE02864FB77009F795A /* AlamofireImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C76DCEDF2864FB77009F795A /* XCRemoteSwiftPackageReference "AlamofireImage" */;
+			productName = AlamofireImage;
+		};
+		C76DCEE32864FBAA009F795A /* AFNetworking */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C76DCEE22864FBAA009F795A /* XCRemoteSwiftPackageReference "AFNetworking" */;
+			productName = AFNetworking;
+		};
+		C76DCEE62864FD85009F795A /* ParseSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C76DCEE52864FD85009F795A /* XCRemoteSwiftPackageReference "Parse-Swift" */;
+			productName = ParseSwift;
+		};
+		C76DCEED28651144009F795A /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C76DCEEC28651143009F795A /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C70FBFBC263B26B500CAEF09 /* Project object */;
 }

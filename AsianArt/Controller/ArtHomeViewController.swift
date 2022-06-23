@@ -42,11 +42,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                 
         Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(self.stopAnimation), userInfo: nil, repeats: false)
         
-        // register the .xib file
         let nib = UINib(nibName: "ArtworkTableViewCell", bundle: nil)
         tableView.register(nib, forCellReuseIdentifier: "ArtworkTableViewCell")
         
-        // searchController will use this view controller to display the search results
         searchController = UISearchController(searchResultsController: nil)
         searchController.searchResultsUpdater = self
         searchController.obscuresBackgroundDuringPresentation = false // underlying content is not obscured during a search
@@ -54,12 +52,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         searchController.searchBar.sizeToFit()
         searchController.searchBar.placeholder = "Explore new art with any keywords"
         tableView.tableHeaderView = searchController.searchBar
-        // set this view controller as presenting view controller for the search interface
-        definesPresentationContext = true
+        definesPresentationContext = true // set this view controller as presenting view controller for the search interface
         
     }
     
-    // Pass the API link to the API.swift file to request data.
     func getAPIData(link: String) {
         // importing from the API.swift
         API.getArtworks(link: link) { (artworks) in
@@ -71,39 +67,30 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         }
     }
     
-    @IBAction func onLogout(_ sender: Any) {
-        TwitterAPICaller.client?.logout()
-        self.dismiss(animated: true, completion: nil)
-    }
+//    @IBAction func onLogout(_ sender: Any) {
+//        TwitterAPICaller.client?.logout()
+//        self.dismiss(animated: true, completion: nil)
+//    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // return cells however many artists there are in the data
         return artworksArray.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        // each cell's textlabels are updated from the API data
         let cell = tableView.dequeueReusableCell(withIdentifier: "ArtworkTableViewCell", for: indexPath) as! ArtworkTableViewCell
         let artwork = artworksArray[indexPath.row]
         cell.titleLabel.text = artwork["title"] as? String
         
-        // catches if "artist_display" returns nil
         let artistLong = artwork["artist_display"] as? String
         if artistLong != nil {
             let components = artistLong!.components(separatedBy: "\n")
             let artistShort = components[0]
             cell.artistLabel.text = artistShort
         }
-        
-//        let artistLong = artwork["artist_display"] as? String
-//        let components = artistLong.components(separatedBy: "\n")
-//        let artistShort = components[0]
-//        cell.artistLabel.text = artistShort
-        
+
         cell.dateLabel.text = artwork["date_display"] as? String
         cell.mediumLabel.text = artwork["medium_display"] as? String
         
-        // display image
         if let image_id = artwork["image_id"] as? String {
             let iiifLink = "https://www.artic.edu/iiif/2/" + image_id + "/full/843,/0/default.jpg"
             let imageURL = URL(string: iiifLink)
@@ -113,8 +100,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         return cell
     }
     
-    // checks if user input contains only numbers and English characters (users cannot search in other language)
-    // function adapted from Stack Overflow https://stackoverflow.com/questions/29520618/how-can-i-check-if-a-string-contains-letters-in-swift
     func containsOnlyLetters(input: String) -> Bool {
        for chr in input {
         if (!(chr >= "a" && chr <= "z") && !(chr >= "A" && chr <= "Z") && !(chr >= "0" && chr <= "9")) {

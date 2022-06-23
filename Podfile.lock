@@ -14,16 +14,16 @@ PODS:
   - AFNetworking/Serialization (3.0.4)
   - AFNetworking/UIKit (3.0.4):
     - AFNetworking/NSURLSession
-  - Alamofire (5.4.3)
+  - Alamofire (5.6.1)
   - AlamofireImage (4.2.0):
     - Alamofire (~> 5.4)
   - BDBOAuth1Manager (2.0.0):
     - AFNetworking/NSURLSession (~> 3.0.0)
   - Bolts/Tasks (1.9.1)
-  - lottie-ios (3.2.3)
-  - Parse (1.19.2):
-    - Parse/Core (= 1.19.2)
-  - Parse/Core (1.19.2):
+  - lottie-ios (3.3.0)
+  - Parse (1.19.3):
+    - Parse/Core (= 1.19.3)
+  - Parse/Core (1.19.3):
     - Bolts/Tasks (= 1.9.1)
 
 DEPENDENCIES:
@@ -45,12 +45,12 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   AFNetworking: a0075feb321559dc78d9d85b55d11caa19eabb93
-  Alamofire: e447a2774a40c996748296fa2c55112fdbbc42f9
+  Alamofire: 87bd8c952f9a4454320fce00d9cc3de57bcadaf5
   AlamofireImage: 34a2d90b0e5fe6a5605f85ae4b7b01e784c60192
   BDBOAuth1Manager: 92d17d06f8a648602962304cd2f35ae7394fa001
   Bolts: 8c1e8aab2f603387b8b9924f57d1d64f43d3ffdc
-  lottie-ios: c058aeafa76daa4cf64d773554bccc8385d0150e
-  Parse: 081fb8755c3000fd11df817eec235def233d0af3
+  lottie-ios: 6ac74dcc09904798f59b18cb3075c089d76be9ae
+  Parse: 0abb63a0ff6fa34a3f64b81d595a294e2ece143a
 
 PODFILE CHECKSUM: 96695d33555389cdeddbf420464b5c7b17f7a70f
 
