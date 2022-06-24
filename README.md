@@ -18,7 +18,6 @@
 ---
 
 ### To Be Implemented (High Priority)
-- [ ] User can click the artist's name in the details screen to see other works by the same artist. 
 - [ ] Make details screen's info section scrollable (upward). Add "read more" button to read description of the artwork.  
 
 ### To Be Implemented (Lower Priority, a.k.a soon-to-be high priority)
@@ -30,6 +29,9 @@
 - [ ] User can download image. 
 
 ---
+
+### June 24, 2022 Update
+- [x] User can click the artist's name in the details screen to see other works by the same artist. 
 
 ### Current User Stories (Jul 23 Update)
 
